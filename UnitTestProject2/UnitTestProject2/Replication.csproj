@@ -72,25 +72,9 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AddressDim.cs" />
-    <Compile Include="Auditdim.cs" />
     <Compile Include="CommonMethods.cs" />
-    <Compile Include="DateDim.cs" />
-    <Compile Include="FacilityDim.cs" />
-    <Compile Include="FwdContainer.cs" />
-    <Compile Include="FwdPackage.cs" />
-    <Compile Include="FwdPackageEvent.cs" />
-    <Compile Include="Fwdtracking.cs" />
-    <Compile Include="FwdUSPSPackage.cs" />
-    <Compile Include="Fwduspspackageevent.cs" />
-    <Compile Include="OrgDim.cs" />
-    <Compile Include="PostalCodeDim.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchemaTests.cs" />
-    <Compile Include="TrackingEventDim.cs" />
-    <Compile Include="USPSFacilityDim.cs" />
-    <Compile Include="USPSFacilityServiceZip.cs" />
-    <Compile Include="UspsPricingCategoryDim.cs" />
-    <Compile Include="USPSRateCategoryDim.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
