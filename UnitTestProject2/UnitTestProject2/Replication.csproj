@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Selenium.WebDriverBackedSelenium">
-      <HintPath>T:\Selenium\2.43.1\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
+      <HintPath>T:\replication\Selenium.WebDriverBackedSelenium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -44,18 +44,18 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="ThoughtWorks.Selenium.Core">
-      <HintPath>T:\Selenium\2.43.1\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
+      <HintPath>T:\replication\ThoughtWorks.Selenium.Core.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.WebDriver.2.53.1\lib\net40\WebDriver.dll</HintPath>
+      <HintPath>T:\replication\WebDriver.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WebDriver.Support">
-      <HintPath>T:\Selenium\2.43.1\net40\WebDriver.Support.dll</HintPath>
+      <HintPath>T:\replication\WebDriver.Support.dll</HintPath>
     </Reference>
     <Reference Include="xmldiffpatch, Version=1.0.8.28, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\XmlDiffPatch\Bin\xmldiffpatch.dll</HintPath>
+      <HintPath>T:\replication\xmldiffpatch.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
