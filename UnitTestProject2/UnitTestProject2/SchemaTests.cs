@@ -79,67 +79,6 @@ namespace CloudReplicationTests
             }
             Assert.AreEqual(source, target);
         }
-        [TestMethod]
-        public void DDLValidationByColumnSize()
-        {
-            string source = "";
-            string target = "";
-            for (i = 0; i < CommonMethods.list.Count; i++)
-            {
-                source = "select CHARACTER_MAXIMUM_LENGTH from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "'";
-                target = "select CHARACTER_MAXIMUM_LENGTH from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "' and table_schema=" + "'" + schema + "'";
-
-                source = CommonMethods.ResultSetCount(source, "Source", "Source", CommonMethods.connStringdw);
-                target = CommonMethods.ResultSetCount(target, "Target", "Target", CommonMethods.connStringdw1);
-                if (source.Equals(target))
-                {
-                    Console.WriteLine(CommonMethods.list[i] + ":" + " " + "source and target are equal");
-
-                }
-                else
-                {
-                    CommonMethods.textCompare(source, target);
-                    //CompareXml(@"C:\\ReplicationTests\\Source.xml", @"C:\\ReplicationTests\\Target.xml", @"C:\\ReplicationTests\\DiffBetweenSourceAndTarget.xml");
-                }
-            }
-            Assert.AreEqual(source, target);
-        }
-
-
-
-        /*[TestMethod]
-        public void PrimaryKeyUniqueness()
-        {
-            commonsqlstatement1("select top 1 fwduspspackagekey,count(*) from dbo.fwduspspackageevent group by FwdUSPSPackageKey,trackingeventkey,eventstddatekey,eventstddatekey having count(*)>1 and fwduspspackagekey='242730448'");
-            CompareXml("c:\\first\\data.xml", "c:\\second\\data.xml", "c:\\second\\diff.xml");
-        }*/
-
-        [TestMethod]
-        public void DDLValidationByISNullable()
-        {
-            string source = "";
-            string target = "";
-
-            for (i = 0; i < CommonMethods.list.Count; i++)
-            {
-                source = "select is_nullable from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "'";
-                target = "select is_nullable from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "' and table_schema=" + "'" + schema + "'";
-
-                source = CommonMethods.ResultSetCount(source, "Source", "Source", CommonMethods.connStringdw);
-                target = CommonMethods.ResultSetCount(target, "Target", "Target", CommonMethods.connStringdw1);
-                if (source.Equals(target))
-                {
-                    Console.WriteLine(CommonMethods.list[i] + ":" + " " + "source and target are equal");
-
-                }
-                else
-                {
-
-                    CommonMethods.textCompare(source, target);
-                    //CompareXml(@"C:\\ReplicationTests\\Source.xml", @"C:\\ReplicationTests\\Target.xml", @"C:\\ReplicationTests\\DiffBetweenSourceAndTarget.xml");
-                }
-            }
-            Assert.AreEqual(source, target);
-        }
+       
     }
 }
