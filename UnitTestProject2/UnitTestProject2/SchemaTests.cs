@@ -45,7 +45,7 @@ namespace CloudReplicationTests
                 }
                 else
                 {
-                    CommonMethods.textCompare(source, target);
+                    //CommonMethods.textCompare(source, target);
 
                     //CompareXml(@"C:\\ReplicationTests\\Source.xml", @"C:\\ReplicationTests\\Target.xml", @"C:\\ReplicationTests\\DiffBetweenSourceAndTarget.xml");
                 }
@@ -73,8 +73,8 @@ namespace CloudReplicationTests
                 }
                 else
                 {
-                    CommonMethods.textCompare(source, target);
-                    Console.WriteLine(CommonMethods.list[i] + ":" + " " + "source and target are not equal");
+                    /*CommonMethods.textCompare(source, target);
+                    Console.WriteLine(CommonMethods.list[i] + ":" + " " + "source and target are not equal");*/
                 }
             }
             Assert.AreEqual(source, target);
