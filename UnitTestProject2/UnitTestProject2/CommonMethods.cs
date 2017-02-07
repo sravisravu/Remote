@@ -1,15 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data.SqlClient;
-using System.IO;
 using System.Configuration;
-using System.Xml;
-using Microsoft.XmlDiffPatch;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
-
+using System.Data;
+using System.Threading;
 
 namespace CloudReplicationTests
 {
@@ -17,267 +12,236 @@ namespace CloudReplicationTests
     public class CommonMethods
     {
         public static List<string> list = new List<string>(new string[] { "AddressDim", "AuditDim", "FacilityDim", "FwdContainer", "FwdPackage", "FwdUSPSPackage", "FwdUSPSPackageEvent", "OrgDim", "PostalCodeDim", "TrackingEventDim", "USPSFacilityDim", "USPSFacilityServiceZip", "USPSPricingCategoryDim", "USPSRateCategoryDim", "FwdTracking", "FwdPackageEvent", "DateDim" });
-        public static string connStringdw = "Database=" + ConfigurationManager.AppSettings["sngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["sDBServer"] + ";User Id=etlprocess; password=etlprocess";
+        public static string connStringdw = "Database=" + ConfigurationManager.AppSettings["sngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["sDBServer"] + ";Integrated Security=SSPI;";
         //public static string connStringdw1 = "Server = tcp:" + ConfigurationManager.AppSettings["dDBServer"] + ",1433;Initial Catalog = DWCloud; Persist Security Info=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Authentication=Active Directory Integrated";
-        public static string connStringdw1 = "Database=" + ConfigurationManager.AppSettings["dngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["dDBServer"] + ";User Id=etlprocess; password=etlprocess";
-        public string schema = "dbo";
-        public static int j;
-        public static string source = "";
-        public static string target = "";        
+        public static string connStringdw1 = "Database=" + ConfigurationManager.AppSettings["dngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["dDBServer"] + ";Integrated Security=SSPI;";
+        static int count;
 
-        public static void textCompare(string source, string target)
+        public static DataTable getDifferentRecords(DataTable FirstDataTable, DataTable SecondDataTable)
         {
-            FirefoxDriver driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("https://text-compare.com/");
-            driver.Manage().Window.Maximize();
-            driver.FindElement(By.Id("inputText1")).SendKeys(source);
-            driver.FindElement(By.Id("inputText2")).SendKeys(target);
-            driver.FindElement(By.Id("compareButton")).Click();
-            driver.FindElement(By.Id("emailComparisonButton")).Click();
-            driver.FindElement(By.Id("emailAddressField")).SendKeys("sravisravu@gmail.com");
-            driver.FindElement(By.Id("sendComparisonButton")).Click();
-            driver.Close();
-
-        } 
-
-
-        public static string ColumnNames(int i)
-        {
-            string source = "";
-            source = "select COLUMN_NAME from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "'";
-            source = ResultSetCount(source, "Source", "Source", CommonMethods.connStringdw);
-            //Console.WriteLine(source);
-            return source;
-
-        }
-
-        public static string IntColumnNames(int i)
-        {
-            string source = "";
-            source = "select COLUMN_NAME from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "' and data_type = 'int'";
-            source = ResultSetCount(source, "Source", "Source", CommonMethods.connStringdw);
-            //Console.WriteLine(source);
-            return source;
-
-        }
-        public static string ReplaceFirst(string text, string search, string replace)
-        {
-            int pos = text.IndexOf(search);
-            if (pos < 0)
+            DataTable ResultDataTable = new DataTable("ResultDataTable");
+            using (DataSet ds = new DataSet())
             {
-                return text;
-            }
-            return text.Substring(0, pos) + replace + text.Substring(pos + search.Length);
-        }
-
-        public static string ReplaceLastOccurrence(string Source, string Find, string Replace)
-        {
-            int place = Source.LastIndexOf(Find);
-
-            if (place == -1)
-                return Source;
-
-            string result = Source.Remove(place, Find.Length).Insert(place, Replace);
-            return result;
-        }
-        
-        public static string TargetCount(int i)
-        {
-            string Target = "select count(*) from ";
-            Target = Target + " " + list[i];
-            Target = ResultSetCount(Target, "Target", "Target", connStringdw1);            
-            return Target;
-
-        }
-
-        public static string SourceCount(int i)
-        {
-            string source = "select count(*) from";
-            source = source + " " + list[i];            
-            source = ResultSetCount(source, "Source", "Source", connStringdw);           
-            return source;
-        }
-
-        public static string DDLValidationByColumns(string tablename)
-        {
-
-            string source = "select count(*) from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + tablename + "'";
-            source = ResultSetCount(source, "Source", "Source", connStringdw);
-            return source;
-
-        }
-
-
-        public static void DataValidationForEntireTable(int count, string tablename, string select, string where, string orderby, List<string> tablenamecolumns)
-        {
-            string source = "";
-            string target = "";            
-            string dimcolumns = CommonMethods.StringReplace(count);
-            string[] words = dimcolumns.Split(',');
-            foreach (string word in words)
-            {
-                
-                source = select + " " + word + " " + "from" + " " + CommonMethods.list[count] + " " + where + " " + orderby;
-                target = select + " " + word + " " + "from" + " " + CommonMethods.list[count] + " " + where + " " + orderby;                
-                source = CommonMethods.ResultSetCount(source, "Source", "Source", CommonMethods.connStringdw);                
-                target = CommonMethods.ResultSetCount(target, "Target", "Target", CommonMethods.connStringdw1);
-                
-                if (source.ToLower().Equals(target.ToLower()))
+                ds.Tables.AddRange(new DataTable[] { FirstDataTable.Copy(), SecondDataTable.Copy() });
+                DataColumn[] firstColumns = new DataColumn[ds.Tables[0].Columns.Count];
+                for (int i = 0; i < firstColumns.Length; i++)
                 {
-                    Console.WriteLine(word + ":" + " " + "source and target are equal");
-                    Console.WriteLine(source);
-                    Console.WriteLine(target);
+                    firstColumns[i] = ds.Tables[0].Columns[i];
                 }
-                else
+                DataColumn[] secondColumns = new DataColumn[ds.Tables[1].Columns.Count];
+                for (int i = 0; i < secondColumns.Length; i++)
                 {
-                        CommonMethods.textCompare(CommonMethods.list[count] + word + ":" + " " + source, CommonMethods.list[count] + word + ":" + " " + target);                      
-
-                 }
-                
-            }            
-
-        }  
-
-        public static void CountDistinctColumn(int i)
-        {           
-            string dimcolumns = CommonMethods.StringReplace(i);
-            string[] words = dimcolumns.Split(',');
-            foreach (string word in words)
-            {
-                source = "select count( distinct " + word+ ")" + " " + "from"+" "+ list[i];
-                source = ResultSetCount(source, "Source", "Source", connStringdw);               
-                Console.WriteLine("Source Count:" + word+" "+source);
-                target = "select count( distinct " + word + ")" + " " + "from" + " " + list[i];
-                target = ResultSetCount(target, "Target", "Target", connStringdw1);
-                Console.WriteLine("Source Count:" + word + " " + target);
-               
-                 if (source.ToLower().Equals(target.ToLower()))
-                 {
-                     Console.WriteLine("source and target are equal");
-
-                 }
-                 else
-                 {
-                     CommonMethods.textCompare(CommonMethods.list[i] + word + ":" + " " + source, CommonMethods.list[i] + word + ":" + " " + target);
-                 }
-
-            }
-        }
-
-
-        public static void SumIntColumn(int i)
-        {
-            string dimcolumns = CommonMethods.intStringReplace(i);
-            string[] words = dimcolumns.Split(',');
-            foreach (string word in words)
-            {
-                
-                source = "select sum(cast("+word+" as bigint))" + " " + "from" + " " + list[i];
-                source = ResultSetCount(source, "Source", "Source", connStringdw);
-                Console.WriteLine("Source Count:" + word + " " + source);
-
-                target = "select sum(cast(" + word + " as bigint))" + " " + "from" + " " + list[i];
-                target = ResultSetCount(target, "Target", "Target", connStringdw1);
-                Console.WriteLine("Target Count:" + word + " " + target);
-
-                if (source.ToLower().Equals(target.ToLower()))
-                {
-                    Console.WriteLine("source and target are equal");
-
+                    secondColumns[i] = ds.Tables[1].Columns[i];
                 }
-                else
+                DataRelation r1 = new DataRelation(string.Empty, firstColumns, secondColumns, false);
+                ds.Relations.Add(r1);
+                DataRelation r2 = new DataRelation(string.Empty, secondColumns, firstColumns, false);
+                ds.Relations.Add(r2); 
+                for (int i = 0; i < FirstDataTable.Columns.Count; i++)
                 {
-                    CommonMethods.textCompare(CommonMethods.list[i] + word + ":" + " " + source, CommonMethods.list[i] + word + ":" + " " + target);
-
-
+                    ResultDataTable.Columns.Add(FirstDataTable.Columns[i].ColumnName, FirstDataTable.Columns[i].DataType);
+                }                
+                ResultDataTable.BeginLoadData(); 
+                foreach (DataRow parentrow in ds.Tables[0].Rows)
+                {                    
+                    DataRow[] childrows = parentrow.GetChildRows(r1);
+                    if (childrows == null || childrows.Length == 0)
+                    {
+                        count = 1;
+                        ResultDataTable.LoadDataRow(parentrow.ItemArray, true);
+                    }
                 }
-
+                foreach (DataRow parentrow in ds.Tables[1].Rows)
+                {                    
+                    DataRow[] childrows = parentrow.GetChildRows(r2);
+                    if (childrows == null || childrows.Length == 0)
+                    {
+                        count = 1;
+                        ResultDataTable.LoadDataRow(parentrow.ItemArray, true);
+                    }
+                }
+                ResultDataTable.EndLoadData();
             }
+            return ResultDataTable;
         }
+      
 
-        public static string StringReplace(int i)
+        public static string ColumnNames(string tablename)
         {
-            string columns = CommonMethods.ColumnNames(i);
-            columns = columns.Replace(" ", "\",\"");            
-            columns = CommonMethods.ReplaceFirst(columns, "\",", "");
-            string temp = columns;
-            string output = temp.Substring(temp.Length - 1, 1);
-            columns = CommonMethods.ReplaceLastOccurrence(columns, output, output + "\"");            
-            return columns;
+            string source = "DECLARE @categories varchar(8000);SET @categories = NULL;select top 32 @categories = COALESCE(@categories + ',','')  + COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + tablename + "';SELECT @categories;";
+            source = ResultSetCount(source, CommonMethods.connStringdw);
+            return source;
         }
 
-        public static string intStringReplace(int i)
+        public static string IntColumnNames(string tablename)
         {
-            string columns = CommonMethods.IntColumnNames(i);
-            columns = columns.Replace(" ", "\",\"");
-            columns = CommonMethods.ReplaceFirst(columns, "\",", "");
-            string temp = columns;
-            string output = temp.Substring(temp.Length - 1, 1);
-            columns = CommonMethods.ReplaceLastOccurrence(columns, output, output + "\"");
-            return columns;
+            string source = "DECLARE @categories varchar(8000);SET @categories = NULL;select top 32 @categories = COALESCE(@categories + ',','')  + COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + tablename + "' and data_type = 'int';SELECT @categories;";
+            source = ResultSetCount(source, CommonMethods.connStringdw);
+            return source;
+
         }
 
-
-        
-
-        public static List<string> PopulateColumn(int i)
+        public static string RemainingColumnNames(string tablename)
         {
-            string dimcolumns = CommonMethods.StringReplace(i);
-            //Console.WriteLine(dimcolumns);
-            source = CommonMethods.SourceCount(i);
-            target = CommonMethods.TargetCount(i);            
-            return new List<string>(new string[] { dimcolumns } );
-
-           
+            string source = "DECLARE @categories varchar(8000);SET @categories = NULL;select @categories = COALESCE(@categories + ',','')  + COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name="+"'"+tablename+"' and column_name not in (select top 32 COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name="+"'"+tablename+"');SELECT @categories;";
+            Console.WriteLine(source);
+            source = ResultSetCount(source, CommonMethods.connStringdw);
+            return source;
         }
+       
 
-        
-
-
-        public static string ResultSetCount(string inputsql, string resultset, string filename, string connStringdw)
+        public static string ResultSetCount(string inputsql, string connStringdw)
         {
             SqlConnection conndw = new SqlConnection(connStringdw);
             conndw.Open();
-            /*XmlDocument xmltest = new XmlDocument(); */
             SqlCommand cmdinsertdw = new SqlCommand(inputsql, conndw);
-            cmdinsertdw.CommandTimeout = 500000;
-            resultset = "";
+            string resultset = "";
             SqlDataReader readerngsdw = cmdinsertdw.ExecuteReader();
             while (readerngsdw.Read())
             {
-                resultset = resultset + " " + readerngsdw[0].ToString();
+                resultset = resultset + readerngsdw[0].ToString();
             }
-
-            /* xmltest.LoadXml("<body><head>"+ resultset + "</head></body>");          
-             XmlWriter writer = XmlWriter.Create(@"C:\\ReplicationTests\\"+ filename + ".xml");
-             xmltest.Save(writer);          
-             writer.Close();*/
             readerngsdw.Close();
             conndw.Close();
             Console.ReadLine();
             return resultset;
         }
 
-        public static void CompareXml(string file1, string file2, string diffFileNameWithPath)
+       
+        public static void Count(string columnname)
         {
-
-            XmlReader reader1 = XmlReader.Create(new StringReader(file1));
-            XmlReader reader2 = XmlReader.Create(new StringReader(file2));
-
-            StringBuilder differenceStringBuilder = new StringBuilder();
-
-            using (FileStream fs = new FileStream(diffFileNameWithPath, FileMode.Create))
+            for (int i = 0; i < CommonMethods.list.Count; i++)
             {
-                XmlWriter diffGramWriter = XmlWriter.Create(fs);
+                string source = "select" + " " + columnname + " " + "from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "'";
+                string target = "select" + " " + columnname + " " + "from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "'";
 
-                XmlDiff xmldiff = new XmlDiff(XmlDiffOptions.IgnoreChildOrder |
-                                        XmlDiffOptions.IgnoreNamespaces |
-                                        XmlDiffOptions.IgnorePrefixes);
-                bool bIdentical = xmldiff.Compare(file1, file2, false, diffGramWriter);
+                source = CommonMethods.ResultSetCount(source, CommonMethods.connStringdw);
+                target = CommonMethods.ResultSetCount(target, CommonMethods.connStringdw1);
+                if (source.Equals(target))
+                {
+                    Console.WriteLine(CommonMethods.list[i] + ":" + " " + "source and target are equal");
 
-                diffGramWriter.Close();
+                }
+                else
+                {
+                    Console.WriteLine(CommonMethods.list[i] + ":" + " " + "source and target are not equal");
+                    Assert.Fail();
+                }
+            }
+        }
+        public static void SourceTargetValidation(string sql)
+        {
+            DataTable dt1 = new DataTable();
+            DataTable dt2 = new DataTable();
+            SqlConnection con = new SqlConnection(CommonMethods.connStringdw);
+            con.Open();
+            SqlConnection con1 = new SqlConnection(CommonMethods.connStringdw1);
+            con1.Open();
+            SqlCommand cmd = new SqlCommand(sql);
+            cmd.CommandTimeout = 0;
+            SqlCommand cmd1 = new SqlCommand(sql);
+            cmd1.CommandTimeout = 0;
+            using (con)
+            {
+                using (SqlDataAdapter da = new SqlDataAdapter())
+                {
+                    cmd.Connection = con;
+                    da.SelectCommand = cmd;                    
+                    da.Fill(dt1);
+                    
+                }
+            }
+            using (con1)
+            {
+                using (SqlDataAdapter da = new SqlDataAdapter())
+                {
+                    cmd1.Connection = con1;
+                    da.SelectCommand = cmd1;                    
+                    da.Fill(dt2);
+                    
+                }
+            }
+            DataTable DiffTable = new DataTable();
+            string result = "";
+            DiffTable = CommonMethods.getDifferentRecords(dt1, dt2);            
+            if (count==1)
+            {
+                Console.WriteLine("Source and Target Row Count/Row Content do not match");
+                foreach (DataRow row in DiffTable.Rows)
+                {
+                    for (int x = 0; x < DiffTable.Columns.Count; x++)
+                    {
+                        result = result + row[x].ToString();
+                    }
+                    result = result + '\n';
+                }
+                Console.WriteLine(result);
+                Assert.Fail();
+            }
+            else
+            {
+                Console.WriteLine("Source and Target Match");
+
             }
         }
 
+        public static void SourceTargetChangeTracking(string sql,string sql1)
+        {
+            DataTable dt1 = new DataTable();
+            DataTable dt2 = new DataTable();
+            SqlConnection con = new SqlConnection(CommonMethods.connStringdw);
+            con.Open();
+            SqlConnection con1 = new SqlConnection(CommonMethods.connStringdw1);
+            con1.Open();
+            SqlCommand cmd = new SqlCommand(sql);
+            cmd.CommandTimeout = 0;
+            using (con)
+            {
+                using (SqlDataAdapter da = new SqlDataAdapter())
+                {
+                    cmd.Connection = con;
+                    da.SelectCommand = cmd;
+                    da.Fill(dt1);
+
+                }
+            }
+
+            using (con1)
+            {
+                using (SqlDataAdapter da = new SqlDataAdapter())
+                {
+                    foreach (DataRow row in dt1.Rows)
+                    {                       
+                            SqlCommand cmd1 = new SqlCommand(sql1 + row[0]);
+                            cmd1.CommandTimeout = 0;
+                            cmd1.Connection = con1;
+                            da.SelectCommand = cmd1;
+                            da.Fill(dt2);
+                    }
+
+                }
+            }
+            DataTable DiffTable = new DataTable();
+            string result = "";
+            DiffTable = CommonMethods.getDifferentRecords(dt1, dt2);
+            if (count == 1)
+            {
+                Console.WriteLine("Source and Target Row Count/Row Content do not match");
+                foreach (DataRow row in DiffTable.Rows)
+                {
+                    for (int x = 0; x < DiffTable.Columns.Count; x++)
+                    {
+                        result = result + row[x].ToString();
+                    }
+                    result = result + '\n';
+                }
+                Console.WriteLine(result);
+                Assert.Fail();
+            }
+            else
+            {
+                Console.WriteLine("Source and Target Match");
+            }
+        }
     }
 }
