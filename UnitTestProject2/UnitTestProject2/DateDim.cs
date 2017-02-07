@@ -15,13 +15,13 @@ namespace CloudReplicationTests
         [TestMethod]
         public void DateDimReplicationValidation()
         {            
-            datedim.SourceTargetValidation(@"select * from"+schema+"."+datedimtable);
+            datedim.SourceTargetValidation(@"select * from" + " " + schema +"."+datedimtable);
         }
         [TestCategory("DateDim")]
         [TestMethod]
         public void DataValidationForDateDimByCounts()
         {  
-            datedim.SourceTargetValidation(@"select count(*) from"+schema+"."+datedimtable);  
+            datedim.SourceTargetValidation(@"select count(*) from" + " " + schema +"."+datedimtable);  
         }
         [TestCategory("DateDim")]
         [TestMethod]
