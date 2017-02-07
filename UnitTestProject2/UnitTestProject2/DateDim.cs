@@ -15,7 +15,7 @@ namespace CloudReplicationTests
         [TestMethod]
         public void DateDimReplicationValidation()
         {            
-            datedim.SourceTargetValidation(@"select * from" + " " + schema +"."+datedimtable);
+            datedim.SourceTargetValidation(@"select * from" + " " + datedimtable);
         }
         [TestCategory("DateDim")]
         [TestMethod]

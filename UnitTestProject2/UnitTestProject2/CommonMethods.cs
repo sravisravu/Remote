@@ -11,11 +11,12 @@ namespace CloudReplicationTests
 
     public class CommonMethods
     {
-        public static List<string> list = new List<string>(new string[] { "AddressDim", "AuditDim", "FacilityDim", "FwdContainer", "FwdPackage", "FwdUSPSPackage", "FwdUSPSPackageEvent", "OrgDim", "PostalCodeDim", "TrackingEventDim", "USPSFacilityDim", "USPSFacilityServiceZip", "USPSPricingCategoryDim", "USPSRateCategoryDim", "FwdTracking", "FwdPackageEvent", "DateDim" });
+        public static List<string> list = new List<string>(new string[] { "DateDim", "AddressDim", "AuditDim", "FacilityDim", "FwdContainer", "FwdPackage", "FwdUSPSPackage", "FwdUSPSPackageEvent", "OrgDim", "PostalCodeDim", "TrackingEventDim", "USPSFacilityDim", "USPSFacilityServiceZip", "USPSPricingCategoryDim", "USPSRateCategoryDim", "FwdTracking", "FwdPackageEvent" });
         public static string connStringdw = "Database=" + ConfigurationManager.AppSettings["sngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["sDBServer"] + ";User Id=etlprocess; password=etlprocess";
         public static string connStringdw1 = "Server = tcp:" + ConfigurationManager.AppSettings["dDBServer"] + ",1433;Initial Catalog = DWCloud; Persist Security Info=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Authentication=Active Directory Integrated";
         //public static string connStringdw1 = "Database=" + ConfigurationManager.AppSettings["dngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["dDBServer"] + ";User Id=etlprocess; password=etlprocess";
         int count;
+        public static string schema = ConfigurationManager.AppSettings["schema"];
 
         public DataTable getDifferentRecords(DataTable FirstDataTable, DataTable SecondDataTable)
         {
@@ -84,7 +85,6 @@ namespace CloudReplicationTests
         public string RemainingColumnNames(string tablename)
         {
             string source = "DECLARE @categories varchar(8000);SET @categories = NULL;select @categories = COALESCE(@categories + ',','')  + COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name="+"'"+tablename+"' and column_name not in (select top 32 COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name="+"'"+tablename+"');SELECT @categories;";
-            Console.WriteLine(source);
             source = ResultSetCount(source, CommonMethods.connStringdw);
             return source;
         }
@@ -108,12 +108,12 @@ namespace CloudReplicationTests
         }
 
        
-        public void Count(string columnname)
+        public void Schema(string columnname)
         {
             for (int i = 0; i < CommonMethods.list.Count; i++)
             {
                 string source = "select" + " " + columnname + " " + "from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "'";
-                string target = "select" + " " + columnname + " " + "from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "'";
+                string target = "select" + " " + columnname + " " + "from [INFORMATION_SCHEMA].[COLUMNS] where table_schema="+"'"+schema+"'"+" "+"and table_name=" + "'" + CommonMethods.list[i] + "'";
 
                 source = ResultSetCount(source, CommonMethods.connStringdw);
                 target = ResultSetCount(target, CommonMethods.connStringdw1);

@@ -13,7 +13,7 @@ namespace CloudReplicationTests
         public void FacilityDimReplicationValidation()
         {
             string Facilitydimcolumn = facilitydim.ColumnNames("Facilitydim");
-            facilitydim.SourceTargetValidation(@"select" +" "+Facilitydimcolumn +" "+"from dbo.Facilitydim order by 1 desc");
+            facilitydim.SourceTargetValidation(@"select top 10000" +" "+Facilitydimcolumn +" "+"from dbo.Facilitydim order by 1 desc");
            
         }
         [TestCategory("FacilityDim")]

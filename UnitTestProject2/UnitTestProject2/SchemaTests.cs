@@ -14,25 +14,25 @@ namespace CloudReplicationTests
         [TestMethod]
         public void DDLValidationByColumnName()
         {
-            st.Count("column_name");       
+            st.Schema("column_name");       
 
         }
 
         [TestMethod]
         public void DDLValidationByDataType()
         {
-            st.Count("data_type");
+            st.Schema("data_type");
         }
         [TestMethod]
         public void DDLValidationByColumnSize()
         {
-            st.Count("CHARACTER_MAXIMUM_LENGTH");
+            st.Schema("CHARACTER_MAXIMUM_LENGTH");
         }     
     
         [TestMethod]
         public void DDLValidationByISNullable()
         {
-            st.Count("is_nullable");
+            st.Schema("is_nullable");
         }
     }
 }

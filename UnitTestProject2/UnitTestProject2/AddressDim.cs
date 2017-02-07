@@ -12,7 +12,7 @@ namespace CloudReplicationTests
         public void AddressDimReplicationValidation()
         {
             string addressdimcolumn = AddressDim.ColumnNames("addressdim");
-            AddressDim.SourceTargetValidation(@"select top 100000" +addressdimcolumn+" "+"from dbo.addressdim order by 1 desc");
+            AddressDim.SourceTargetValidation(@"select top 10000" +addressdimcolumn+" "+"from dbo.addressdim order by 1 desc");
         }
         [TestCategory("AddressDim")]
         [TestMethod]
