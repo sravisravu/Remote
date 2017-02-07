@@ -6,18 +6,19 @@ namespace CloudReplicationTests
     [TestClass]
     public class addressdim
     {
+        CommonMethods AddressDim = new CommonMethods();
         [TestCategory("AddressDim")]
         [TestMethod]
         public void AddressDimReplicationValidation()
         {
-            string addressdimcolumn = CommonMethods.ColumnNames("addressdim");              
-            CommonMethods.SourceTargetValidation(@"select top 100000" +addressdimcolumn+" "+"from dbo.addressdim order by 1 desc");
+            string addressdimcolumn = AddressDim.ColumnNames("addressdim");
+            AddressDim.SourceTargetValidation(@"select top 100000" +addressdimcolumn+" "+"from dbo.addressdim order by 1 desc");
         }
         [TestCategory("AddressDim")]
         [TestMethod]
         public void DataValidationForaddressDimByCounts()
         {
-            CommonMethods.SourceTargetValidation(@"select count(*) from dbo.addressdim");
+            AddressDim.SourceTargetValidation(@"select count(*) from dbo.addressdim");
         }
       /*  [TestCategory("AddressDim")]
         [TestMethod]

@@ -17,7 +17,7 @@ namespace CloudReplicationTests
         public static string connStringdw1 = "Database=" + ConfigurationManager.AppSettings["dngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["dDBServer"] + ";User Id=etlprocess; password=etlprocess";
         static int count;
 
-        public static DataTable getDifferentRecords(DataTable FirstDataTable, DataTable SecondDataTable)
+        public DataTable getDifferentRecords(DataTable FirstDataTable, DataTable SecondDataTable)
         {
             DataTable ResultDataTable = new DataTable("ResultDataTable");
             using (DataSet ds = new DataSet())
@@ -66,14 +66,14 @@ namespace CloudReplicationTests
         }
       
 
-        public static string ColumnNames(string tablename)
+        public string ColumnNames(string tablename)
         {
             string source = "DECLARE @categories varchar(8000);SET @categories = NULL;select top 32 @categories = COALESCE(@categories + ',','')  + COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + tablename + "';SELECT @categories;";
             source = ResultSetCount(source, CommonMethods.connStringdw);
             return source;
         }
 
-        public static string IntColumnNames(string tablename)
+        public string IntColumnNames(string tablename)
         {
             string source = "DECLARE @categories varchar(8000);SET @categories = NULL;select top 32 @categories = COALESCE(@categories + ',','')  + COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + tablename + "' and data_type = 'int';SELECT @categories;";
             source = ResultSetCount(source, CommonMethods.connStringdw);
@@ -81,7 +81,7 @@ namespace CloudReplicationTests
 
         }
 
-        public static string RemainingColumnNames(string tablename)
+        public string RemainingColumnNames(string tablename)
         {
             string source = "DECLARE @categories varchar(8000);SET @categories = NULL;select @categories = COALESCE(@categories + ',','')  + COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name="+"'"+tablename+"' and column_name not in (select top 32 COLUMN_Name from [INFORMATION_SCHEMA].[COLUMNS] where table_name="+"'"+tablename+"');SELECT @categories;";
             Console.WriteLine(source);
@@ -90,7 +90,7 @@ namespace CloudReplicationTests
         }
        
 
-        public static string ResultSetCount(string inputsql, string connStringdw)
+        public string ResultSetCount(string inputsql, string connStringdw)
         {
             SqlConnection conndw = new SqlConnection(connStringdw);
             conndw.Open();
@@ -108,15 +108,15 @@ namespace CloudReplicationTests
         }
 
        
-        public static void Count(string columnname)
+        public void Count(string columnname)
         {
             for (int i = 0; i < CommonMethods.list.Count; i++)
             {
                 string source = "select" + " " + columnname + " " + "from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "'";
                 string target = "select" + " " + columnname + " " + "from [INFORMATION_SCHEMA].[COLUMNS] where table_name=" + "'" + CommonMethods.list[i] + "'";
 
-                source = CommonMethods.ResultSetCount(source, CommonMethods.connStringdw);
-                target = CommonMethods.ResultSetCount(target, CommonMethods.connStringdw1);
+                source = ResultSetCount(source, CommonMethods.connStringdw);
+                target = ResultSetCount(target, CommonMethods.connStringdw1);
                 if (source.Equals(target))
                 {
                     Console.WriteLine(CommonMethods.list[i] + ":" + " " + "source and target are equal");
@@ -129,7 +129,7 @@ namespace CloudReplicationTests
                 }
             }
         }
-        public static void SourceTargetValidation(string sql)
+        public void SourceTargetValidation(string sql)
         {
             DataTable dt1 = new DataTable();
             DataTable dt2 = new DataTable();
@@ -148,9 +148,11 @@ namespace CloudReplicationTests
                     cmd.Connection = con;
                     da.SelectCommand = cmd;                    
                     da.Fill(dt1);
-                    
+                    da.Dispose();                    
                 }
             }
+            
+            con.Close();
             using (con1)
             {
                 using (SqlDataAdapter da = new SqlDataAdapter())
@@ -158,12 +160,14 @@ namespace CloudReplicationTests
                     cmd1.Connection = con1;
                     da.SelectCommand = cmd1;                    
                     da.Fill(dt2);
-                    
+                    da.Dispose();
+
                 }
             }
+            con1.Close();
             DataTable DiffTable = new DataTable();
             string result = "";
-            DiffTable = CommonMethods.getDifferentRecords(dt1, dt2);            
+            DiffTable = getDifferentRecords(dt1, dt2);            
             if (count==1)
             {
                 Console.WriteLine("Source and Target Row Count/Row Content do not match");
@@ -185,7 +189,7 @@ namespace CloudReplicationTests
             }
         }
 
-        public static void SourceTargetChangeTracking(string sql,string sql1)
+        public void SourceTargetChangeTracking(string sql,string sql1)
         {
             DataTable dt1 = new DataTable();
             DataTable dt2 = new DataTable();
@@ -202,10 +206,11 @@ namespace CloudReplicationTests
                     cmd.Connection = con;
                     da.SelectCommand = cmd;
                     da.Fill(dt1);
+                    da.Dispose();
 
                 }
             }
-
+            con.Close();
             using (con1)
             {
                 using (SqlDataAdapter da = new SqlDataAdapter())
@@ -217,13 +222,15 @@ namespace CloudReplicationTests
                             cmd1.Connection = con1;
                             da.SelectCommand = cmd1;
                             da.Fill(dt2);
+                            da.Dispose();
                     }
 
                 }
             }
+            con1.Close();
             DataTable DiffTable = new DataTable();
             string result = "";
-            DiffTable = CommonMethods.getDifferentRecords(dt1, dt2);
+            DiffTable = getDifferentRecords(dt1, dt2);
             if (count == 1)
             {
                 Console.WriteLine("Source and Target Row Count/Row Content do not match");
