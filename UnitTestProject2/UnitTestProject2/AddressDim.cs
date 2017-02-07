@@ -19,7 +19,7 @@ namespace CloudReplicationTests
         {
             CommonMethods.SourceTargetValidation(@"select count(*) from dbo.addressdim");
         }
-        [TestCategory("AddressDim")]
+      /*  [TestCategory("AddressDim")]
         [TestMethod]
         public void DataValidationaddressDimCountsOfIndividualColumns()
         {
@@ -43,7 +43,7 @@ namespace CloudReplicationTests
                 CommonMethods.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "addressdim");
             }
 
-        }
+        }*/
 
     }
 }

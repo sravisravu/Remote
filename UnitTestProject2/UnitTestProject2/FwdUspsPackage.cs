@@ -21,7 +21,7 @@ namespace CloudReplicationTests
         {
             CommonMethods.SourceTargetValidation(@"select count(*) from dbo.FwdUSPSPackage");
         }
-        [TestCategory("FwdUSPSPackage")]
+       /* [TestCategory("FwdUSPSPackage")]
         [TestMethod]
         public void DataValidationFwdUSPSPackageCountsOfIndividualColumns()
         {
@@ -45,7 +45,7 @@ namespace CloudReplicationTests
                 CommonMethods.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "FwdUSPSPackage");
             }
 
-        }
+        }*/
 
     }
 }

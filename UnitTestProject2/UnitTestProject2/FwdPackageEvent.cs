@@ -20,7 +20,7 @@ namespace CloudReplicationTests
         {
             CommonMethods.SourceTargetValidation(@"select count(*) from dbo.FwdPackageEvent");
         }
-        [TestCategory("FwdPackageEvent")]
+       /* [TestCategory("FwdPackageEvent")]
         [TestMethod]
         public void DataValidationFwdPackageEventCountsOfIndividualColumns()
         {
@@ -44,7 +44,7 @@ namespace CloudReplicationTests
                 CommonMethods.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "FwdPackageEvent");
             }
 
-        }
+        }*/
 
     }
 }
