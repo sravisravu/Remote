@@ -13,7 +13,7 @@ namespace CloudReplicationTests
         public void FwdPackageReplicationValidation()
         {
             string FwdPackagecolumn = fp.ColumnNames("FwdPackage");
-            fp.SourceTargetValidation(@"select top 100000" + " " + FwdPackagecolumn + " " + "from dbo.FwdPackage order by 1 desc");
+            fp.SourceTargetValidation(@"select top 1000" + " " + FwdPackagecolumn + " " + "from dbo.FwdPackage order by 1 desc");
 
         }
         [TestCategory("FwdPackage")]

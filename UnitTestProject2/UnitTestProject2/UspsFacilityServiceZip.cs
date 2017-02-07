@@ -13,7 +13,7 @@ namespace CloudReplicationTests
         {
             string UspsFacilityServiceZipcolumn = ufsz.ColumnNames("UspsFacilityServiceZip");
             
-            ufsz.SourceTargetValidation(@"select top 100000" + " " + UspsFacilityServiceZipcolumn + " " + "from dbo.UspsFacilityServiceZip order by 1 desc");
+            ufsz.SourceTargetValidation(@"select top 1000" + " " + UspsFacilityServiceZipcolumn + " " + "from dbo.UspsFacilityServiceZip order by 1 desc");
 
         }
         [TestCategory("UspsFacilityServiceZip")]

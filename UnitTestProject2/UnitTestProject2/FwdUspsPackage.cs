@@ -13,8 +13,8 @@ namespace CloudReplicationTests
         public void FwdUSPSPackageReplicationValidation()
         {
             string FwdUSPSPackagecolumn = fup.ColumnNames("FwdUSPSPackage");
-            fup.SourceTargetValidation(@"select top 100000" + " " + FwdUSPSPackagecolumn + " " + "from dbo.FwdUSPSPackage order by 1 desc");            
-            fup.SourceTargetValidation(@"select top 100000" + " " + FwdUSPSPackagecolumn + " " + "from dbo.FwdUSPSPackage order by 1");
+            fup.SourceTargetValidation(@"select top 1000" + " " + FwdUSPSPackagecolumn + " " + "from dbo.FwdUSPSPackage order by 1 desc");            
+            fup.SourceTargetValidation(@"select top 1000" + " " + FwdUSPSPackagecolumn + " " + "from dbo.FwdUSPSPackage order by 1");
 
         }
         [TestCategory("FwdUSPSPackage")]

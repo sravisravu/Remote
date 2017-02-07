@@ -13,7 +13,7 @@ namespace CloudReplicationTests
         {
             string UspsFacilitydimcolumn = ufd.ColumnNames("UspsFacilitydim");
             
-            ufd.SourceTargetValidation(@"select top 100000" + " " + UspsFacilitydimcolumn + " " + "from dbo.UspsFacilitydim order by 1 desc");
+            ufd.SourceTargetValidation(@"select top 1000" + " " + UspsFacilitydimcolumn + " " + "from dbo.UspsFacilitydim order by 1 desc");
 
         }
         [TestCategory("UspsFacilityDim")]

@@ -12,7 +12,7 @@ namespace CloudReplicationTests
         public void OrgDimReplicationValidation()
         {
             string orgdimcolumn = od.ColumnNames("orgdim");            
-            od.SourceTargetValidation(@"select"+" " + orgdimcolumn + " " + "from dbo.orgdim order by 1 desc");
+            od.SourceTargetValidation(@"select top 1000"+" " + orgdimcolumn + " " + "from dbo.orgdim order by 1 desc");
 
         }
         [TestCategory("OrgDim")]

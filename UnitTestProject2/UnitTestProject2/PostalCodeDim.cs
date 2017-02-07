@@ -13,7 +13,7 @@ namespace CloudReplicationTests
         {
             string PostalCodedimcolumn = pcd.ColumnNames("PostalCodedim");
             
-            pcd.SourceTargetValidation(@"select top 100000" + " " + PostalCodedimcolumn + " " + "from dbo.PostalCodedim order by 1 desc");
+            pcd.SourceTargetValidation(@"select top 1000" + " " + PostalCodedimcolumn + " " + "from dbo.PostalCodedim order by 1 desc");
 
         }
         [TestCategory("PostalCodeDim")]

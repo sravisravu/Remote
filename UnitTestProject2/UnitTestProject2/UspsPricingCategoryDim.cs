@@ -13,7 +13,7 @@ namespace CloudReplicationTests
         {
             string UspsPricingCategoryDimcolumn = UPCD.ColumnNames("UspsPricingCategoryDim");
            
-            UPCD.SourceTargetValidation(@"select top 100000" + " " + UspsPricingCategoryDimcolumn + " " + "from dbo.UspsPricingCategoryDim order by 1 desc");
+            UPCD.SourceTargetValidation(@"select top 1000" + " " + UspsPricingCategoryDimcolumn + " " + "from dbo.UspsPricingCategoryDim order by 1 desc");
 
         }
         [TestCategory("UspsPricingCategoryDim")]

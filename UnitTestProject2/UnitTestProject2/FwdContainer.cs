@@ -12,7 +12,7 @@ namespace CloudReplicationTests
         public void FwdContainerReplicationValidation()
         {
             string FwdContainercolumn = fc.ColumnNames("FwdContainer");
-            fc.SourceTargetValidation(@"select top 100000" + " " + FwdContainercolumn + " " + "from dbo.FwdContainer order by 1 desc");
+            fc.SourceTargetValidation(@"select top 1000" + " " + FwdContainercolumn + " " + "from dbo.FwdContainer order by 1 desc");
 
         }
         [TestCategory("FwdContainer")]

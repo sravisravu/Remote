@@ -13,7 +13,7 @@ namespace CloudReplicationTests
         public void FwdUspsPackageEventReplicationValidation()
         {
             string FwdUspsPackageEventcolumn = fupe.ColumnNames("FwdUspsPackageEvent");
-            fupe.SourceTargetValidation(@"select top 100000" + " " + FwdUspsPackageEventcolumn + " " + "from dbo.FwdUspsPackageEvent order by 1 desc");
+            fupe.SourceTargetValidation(@"select top 1000" + " " + FwdUspsPackageEventcolumn + " " + "from dbo.FwdUspsPackageEvent order by 1 desc");
 
         }
         [TestCategory("FwdUspsPackageEvent")]

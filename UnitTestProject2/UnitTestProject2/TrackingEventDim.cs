@@ -13,7 +13,7 @@ namespace CloudReplicationTests
         {
             string TrackingEventdimcolumn = TED.ColumnNames("TrackingEventdim");
            
-            TED.SourceTargetValidation(@"select top 100000" + " " + TrackingEventdimcolumn + " " + "from dbo.TrackingEventdim order by 1 desc");
+            TED.SourceTargetValidation(@"select top 1000" + " " + TrackingEventdimcolumn + " " + "from dbo.TrackingEventdim order by 1 desc");
 
         }
         [TestCategory("TrackingEventDim")]

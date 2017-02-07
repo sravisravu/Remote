@@ -12,7 +12,7 @@ namespace CloudReplicationTests
         public void FwdPackageEventReplicationValidation()
         {
             string FwdPackageEventcolumn = fpe.ColumnNames("FwdPackageEvent");           
-            fpe.SourceTargetValidation(@"select top 10000" + " " + FwdPackageEventcolumn + " " + "from dbo.FwdPackageEvent order by 1 desc");
+            fpe.SourceTargetValidation(@"select top 1000" + " " + FwdPackageEventcolumn + " " + "from dbo.FwdPackageEvent order by 1 desc");
 
         }
         [TestCategory("FwdPackageEvent")]
