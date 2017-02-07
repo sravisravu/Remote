@@ -6,20 +6,22 @@ namespace CloudReplicationTests
     [TestClass]
     public class FwdUSPSPackage
     {
-        [TestCategory("FwdUSPSPackage")]
+        CommonMethods fup = new CommonMethods();
+        
+    [TestCategory("FwdUSPSPackage")]
         [TestMethod]
         public void FwdUSPSPackageReplicationValidation()
         {
-            string FwdUSPSPackagecolumn = CommonMethods.ColumnNames("FwdUSPSPackage");
-            CommonMethods.SourceTargetValidation(@"select top 100000" + " " + FwdUSPSPackagecolumn + " " + "from dbo.FwdUSPSPackage order by 1 desc");
-            CommonMethods.SourceTargetValidation(@"select top 100000" + " " + FwdUSPSPackagecolumn + " " + "from dbo.FwdUSPSPackage order by 1");
+            string FwdUSPSPackagecolumn = fup.ColumnNames("FwdUSPSPackage");
+            fup.SourceTargetValidation(@"select top 100000" + " " + FwdUSPSPackagecolumn + " " + "from dbo.FwdUSPSPackage order by 1 desc");            
+            fup.SourceTargetValidation(@"select top 100000" + " " + FwdUSPSPackagecolumn + " " + "from dbo.FwdUSPSPackage order by 1");
 
         }
         [TestCategory("FwdUSPSPackage")]
         [TestMethod]
         public void DataValidationForFwdUSPSPackageByCounts()
         {
-            CommonMethods.SourceTargetValidation(@"select count(*) from dbo.FwdUSPSPackage");
+            fup.SourceTargetValidation(@"select count(*) from dbo.FwdUSPSPackage");
         }
        /* [TestCategory("FwdUSPSPackage")]
         [TestMethod]

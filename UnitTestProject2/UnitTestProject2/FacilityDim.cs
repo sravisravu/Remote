@@ -4,31 +4,33 @@ using System.Collections.Generic;
 namespace CloudReplicationTests
 {
     [TestClass]
+    
     public class Facilitydim
     {
+        CommonMethods facilitydim = new CommonMethods();
         [TestCategory("FacilityDim")]
         [TestMethod]
         public void FacilityDimReplicationValidation()
         {
-            string Facilitydimcolumn = CommonMethods.ColumnNames("Facilitydim");            
-            CommonMethods.SourceTargetValidation(@"select" +" "+Facilitydimcolumn +" "+"from dbo.Facilitydim order by 1 desc");
+            string Facilitydimcolumn = facilitydim.ColumnNames("Facilitydim");
+            facilitydim.SourceTargetValidation(@"select" +" "+Facilitydimcolumn +" "+"from dbo.Facilitydim order by 1 desc");
            
         }
         [TestCategory("FacilityDim")]
         [TestMethod]
         public void DataValidationForFacilityDimByCounts()
         {
-            CommonMethods.SourceTargetValidation(@"select count(*) from dbo.Facilitydim");
+            facilitydim.SourceTargetValidation(@"select count(*) from dbo.Facilitydim");
         }
         [TestCategory("FacilityDim")]
         [TestMethod]
         public void DataValidationFacilityDimCountsOfIndividualColumns()
         {
-            string dimcolumns = CommonMethods.ColumnNames("Facilitydim");
+            string dimcolumns = facilitydim.ColumnNames("Facilitydim");
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "Facilitydim");
+                facilitydim.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "Facilitydim");
             }
 
         }
@@ -37,11 +39,11 @@ namespace CloudReplicationTests
         public void DataValidationFacilityDimCountsOfRemainingIndividualColumns()
         {
 
-            string remainingdimcolumns = CommonMethods.RemainingColumnNames("Facilitydim");
+            string remainingdimcolumns = facilitydim.RemainingColumnNames("Facilitydim");
             string[] remainingwords = remainingdimcolumns.Split(',');
             foreach (string remaining in remainingwords)
             {
-                CommonMethods.SourceTargetValidation("select count( distinct " + remaining + ")" + " " + "from" + " " + "Facilitydim");
+                facilitydim.SourceTargetValidation("select count( distinct " + remaining + ")" + " " + "from" + " " + "Facilitydim");
             }
 
         }
@@ -49,11 +51,11 @@ namespace CloudReplicationTests
         [TestMethod]
         public void DataValidationForFacilityDimBySumOfIntColumns()
         {
-            string dimcolumns = CommonMethods.IntColumnNames("Facilitydim");
+            string dimcolumns = facilitydim.IntColumnNames("Facilitydim");
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "Facilitydim");
+                facilitydim.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "Facilitydim");
             }
 
         }

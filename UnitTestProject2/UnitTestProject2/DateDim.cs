@@ -1,45 +1,51 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using System.Configuration;
+
+
 namespace CloudReplicationTests
 {
     [TestClass]
     public class Datedim
     {
+        CommonMethods datedim = new CommonMethods();
+        public static string schema =ConfigurationManager.AppSettings["schema"];
+        public static string datedimtable = ConfigurationManager.AppSettings["datedim"];
+
         [TestCategory("DateDim")]
         [TestMethod]
         public void DateDimReplicationValidation()
-        {
-            CommonMethods.SourceTargetValidation(@"select * from dbo.Datedim");
+        {            
+            datedim.SourceTargetValidation(@"select * from"+schema+"."+datedimtable);
         }
         [TestCategory("DateDim")]
         [TestMethod]
         public void DataValidationForDateDimByCounts()
-        {
-            CommonMethods.SourceTargetValidation(@"select count(*) from dbo.Datedim");          
-
+        {  
+            datedim.SourceTargetValidation(@"select count(*) from"+schema+"."+datedimtable);  
         }
         [TestCategory("DateDim")]
         [TestMethod]
         public void DataValidationDateDimCountsOfIndividualColumns()
         {
-            string dimcolumns = CommonMethods.ColumnNames("datedim");
+            
+            string dimcolumns = datedim.ColumnNames(datedimtable);
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
-            {
-                CommonMethods.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "datedim");
+            {               
+                datedim.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " +schema+"."+datedimtable);
             }
 
         }
-
         [TestCategory("DateDim")]
         [TestMethod]
         public void DataValidationForDateDimBySumOfIntColumns()
-        {
-            string dimcolumns = CommonMethods.IntColumnNames("datedim");
+        {          
+            string dimcolumns = datedim.IntColumnNames(datedimtable);
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "datedim");
+                CommonMethods datedim = new CommonMethods();
+                datedim.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " "+schema+"."+datedimtable);
             }            
 
         }

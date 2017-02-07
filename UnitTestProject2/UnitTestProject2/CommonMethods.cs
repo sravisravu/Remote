@@ -13,9 +13,9 @@ namespace CloudReplicationTests
     {
         public static List<string> list = new List<string>(new string[] { "AddressDim", "AuditDim", "FacilityDim", "FwdContainer", "FwdPackage", "FwdUSPSPackage", "FwdUSPSPackageEvent", "OrgDim", "PostalCodeDim", "TrackingEventDim", "USPSFacilityDim", "USPSFacilityServiceZip", "USPSPricingCategoryDim", "USPSRateCategoryDim", "FwdTracking", "FwdPackageEvent", "DateDim" });
         public static string connStringdw = "Database=" + ConfigurationManager.AppSettings["sngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["sDBServer"] + ";User Id=etlprocess; password=etlprocess";
-        //public static string connStringdw1 = "Server = tcp:" + ConfigurationManager.AppSettings["dDBServer"] + ",1433;Initial Catalog = DWCloud; Persist Security Info=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Authentication=Active Directory Integrated";
-        public static string connStringdw1 = "Database=" + ConfigurationManager.AppSettings["dngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["dDBServer"] + ";User Id=etlprocess; password=etlprocess";
-        static int count;
+        public static string connStringdw1 = "Server = tcp:" + ConfigurationManager.AppSettings["dDBServer"] + ",1433;Initial Catalog = DWCloud; Persist Security Info=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Authentication=Active Directory Integrated";
+        //public static string connStringdw1 = "Database=" + ConfigurationManager.AppSettings["dngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["dDBServer"] + ";User Id=etlprocess; password=etlprocess";
+        int count;
 
         public DataTable getDifferentRecords(DataTable FirstDataTable, DataTable SecondDataTable)
         {

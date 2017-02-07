@@ -5,32 +5,34 @@ namespace CloudReplicationTests
 {
 
     [TestClass]
+
     public class SchemaTests
     {
+        CommonMethods st = new CommonMethods();
         int i;
         public string schema = "dbo";
         [TestMethod]
         public void DDLValidationByColumnName()
         {
-            CommonMethods.Count("column_name");       
+            st.Count("column_name");       
 
         }
 
         [TestMethod]
         public void DDLValidationByDataType()
         {
-            CommonMethods.Count("data_type");
+            st.Count("data_type");
         }
         [TestMethod]
         public void DDLValidationByColumnSize()
         {
-            CommonMethods.Count("CHARACTER_MAXIMUM_LENGTH");
+            st.Count("CHARACTER_MAXIMUM_LENGTH");
         }     
     
         [TestMethod]
         public void DDLValidationByISNullable()
         {
-            CommonMethods.Count("is_nullable");
+            st.Count("is_nullable");
         }
     }
 }

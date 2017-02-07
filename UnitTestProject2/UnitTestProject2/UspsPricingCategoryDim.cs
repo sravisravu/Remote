@@ -6,29 +6,33 @@ namespace CloudReplicationTests
     [TestClass]
     public class UspsPricingCategoryDim
     {
+        CommonMethods UPCD = new CommonMethods();
         [TestCategory("UspsPricingCategoryDim")]
         [TestMethod]
         public void UspsPricingCategoryDimReplicationValidation()
         {
-            string UspsPricingCategoryDimcolumn = CommonMethods.ColumnNames("UspsPricingCategoryDim");
-            CommonMethods.SourceTargetValidation(@"select top 100000" + " " + UspsPricingCategoryDimcolumn + " " + "from dbo.UspsPricingCategoryDim order by 1 desc");
+            string UspsPricingCategoryDimcolumn = UPCD.ColumnNames("UspsPricingCategoryDim");
+           
+            UPCD.SourceTargetValidation(@"select top 100000" + " " + UspsPricingCategoryDimcolumn + " " + "from dbo.UspsPricingCategoryDim order by 1 desc");
 
         }
         [TestCategory("UspsPricingCategoryDim")]
         [TestMethod]
         public void DataValidationForUspsPricingCategoryDimByCounts()
         {
-            CommonMethods.SourceTargetValidation(@"select count(*) from dbo.UspsPricingCategoryDim");
+            
+            UPCD.SourceTargetValidation(@"select count(*) from dbo.UspsPricingCategoryDim");
         }
         [TestCategory("UspsPricingCategoryDim")]
         [TestMethod]
         public void DataValidationUspsPricingCategoryDimCountsOfIndividualColumns()
         {
-            string dimcolumns = CommonMethods.ColumnNames("UspsPricingCategoryDim");
+            string dimcolumns = UPCD.ColumnNames("UspsPricingCategoryDim");
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "UspsPricingCategoryDim");
+                
+                UPCD.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "UspsPricingCategoryDim");
             }
 
         }
@@ -37,11 +41,12 @@ namespace CloudReplicationTests
         [TestMethod]
         public void DataValidationForUspsPricingCategoryDimBySumOfIntColumns()
         {
-            string dimcolumns = CommonMethods.IntColumnNames("UspsPricingCategoryDim");
+            string dimcolumns = UPCD.IntColumnNames("UspsPricingCategoryDim");
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "UspsPricingCategoryDim");
+                
+                UPCD.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "UspsPricingCategoryDim");
             }
 
         }

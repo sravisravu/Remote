@@ -6,29 +6,30 @@ namespace CloudReplicationTests
     [TestClass]
     public class FwdContainer
     {
+        CommonMethods fc = new CommonMethods();
         [TestCategory("FwdContainer")]
         [TestMethod]
         public void FwdContainerReplicationValidation()
         {
-            string FwdContainercolumn = CommonMethods.ColumnNames("FwdContainer");
-            CommonMethods.SourceTargetValidation(@"select top 100000" + " " + FwdContainercolumn + " " + "from dbo.FwdContainer order by 1 desc");
+            string FwdContainercolumn = fc.ColumnNames("FwdContainer");
+            fc.SourceTargetValidation(@"select top 100000" + " " + FwdContainercolumn + " " + "from dbo.FwdContainer order by 1 desc");
 
         }
         [TestCategory("FwdContainer")]
         [TestMethod]
         public void DataValidationForFwdContainerByCounts()
         {
-            CommonMethods.SourceTargetValidation(@"select count(*) from dbo.FwdContainer");
+            fc.SourceTargetValidation(@"select count(*) from dbo.FwdContainer");
         }
         [TestCategory("FwdContainer")]
         [TestMethod]
         public void DataValidationFwdContainerCountsOfIndividualColumns()
         {
-            string columns = CommonMethods.ColumnNames("FwdContainer");
+            string columns = fc.ColumnNames("FwdContainer");
             string[] words = columns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "FwdContainer");
+                fc.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "FwdContainer");
             }
 
         }
@@ -37,11 +38,11 @@ namespace CloudReplicationTests
         [TestMethod]
         public void DataValidationForFwdContainerBySumOfIntColumns()
         {
-            string columns = CommonMethods.IntColumnNames("FwdContainer");
+            string columns = fc.IntColumnNames("FwdContainer");
             string[] words = columns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "FwdContainer");
+                fc.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "FwdContainer");
             }
 
         }

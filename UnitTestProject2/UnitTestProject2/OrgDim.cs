@@ -6,29 +6,31 @@ namespace CloudReplicationTests
     [TestClass]
     public class orgdim
     {
+        CommonMethods od = new CommonMethods();
         [TestCategory("OrgDim")]
         [TestMethod]
         public void OrgDimReplicationValidation()
         {
-            string orgdimcolumn = CommonMethods.ColumnNames("orgdim");
-            CommonMethods.SourceTargetValidation(@"select"+" " + orgdimcolumn + " " + "from dbo.orgdim order by 1 desc");
+            string orgdimcolumn = od.ColumnNames("orgdim");            
+            od.SourceTargetValidation(@"select"+" " + orgdimcolumn + " " + "from dbo.orgdim order by 1 desc");
 
         }
         [TestCategory("OrgDim")]
         [TestMethod]
         public void DataValidationForOrgDimByCounts()
         {
-            CommonMethods.SourceTargetValidation(@"select count(*) from dbo.Orgdim");
+            
+            od.SourceTargetValidation(@"select count(*) from dbo.Orgdim");
         }
         [TestCategory("OrgDim")]
         [TestMethod]
         public void DataValidationOrgDimCountsOfIndividualColumns()
         {
-            string dimcolumns = CommonMethods.ColumnNames("Orgdim");
+            string dimcolumns = od.ColumnNames("Orgdim");
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "Orgdim");
+               od.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "Orgdim");
             }
 
         }
@@ -37,11 +39,11 @@ namespace CloudReplicationTests
         [TestMethod]
         public void DataValidationForOrgDimBySumOfIntColumns()
         {
-            string dimcolumns = CommonMethods.IntColumnNames("Orgdim");
+            string dimcolumns = od.IntColumnNames("Orgdim");
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "Orgdim");
+                od.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "Orgdim");
             }
 
         }

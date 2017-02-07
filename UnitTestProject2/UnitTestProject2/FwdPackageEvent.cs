@@ -6,19 +6,20 @@ namespace CloudReplicationTests
     [TestClass]
     public class FwdPackageEvent
     {
+        CommonMethods fpe = new CommonMethods();
         [TestCategory("FwdPackageEvent")]
         [TestMethod]
         public void FwdPackageEventReplicationValidation()
         {
-            string FwdPackageEventcolumn = CommonMethods.ColumnNames("FwdPackageEvent");
-            CommonMethods.SourceTargetValidation(@"select top 10000" + " " + FwdPackageEventcolumn + " " + "from dbo.FwdPackageEvent order by 1 desc");
+            string FwdPackageEventcolumn = fpe.ColumnNames("FwdPackageEvent");           
+            fpe.SourceTargetValidation(@"select top 10000" + " " + FwdPackageEventcolumn + " " + "from dbo.FwdPackageEvent order by 1 desc");
 
         }
         [TestCategory("FwdPackageEvent")]
         [TestMethod]
         public void DataValidationForFwdPackageEventByCounts()
         {
-            CommonMethods.SourceTargetValidation(@"select count(*) from dbo.FwdPackageEvent");
+            fpe.SourceTargetValidation(@"select count(*) from dbo.FwdPackageEvent");
         }
        /* [TestCategory("FwdPackageEvent")]
         [TestMethod]

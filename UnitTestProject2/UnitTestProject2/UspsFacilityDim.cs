@@ -6,29 +6,33 @@ namespace CloudReplicationTests
     [TestClass]
     public class UspsFacilitydim
     {
+        CommonMethods ufd = new CommonMethods();
         [TestCategory("UspsFacilityDim")]
         [TestMethod]
         public void UspsFacilityDimReplicationValidation()
         {
-            string UspsFacilitydimcolumn = CommonMethods.ColumnNames("UspsFacilitydim");
-            CommonMethods.SourceTargetValidation(@"select top 100000" + " " + UspsFacilitydimcolumn + " " + "from dbo.UspsFacilitydim order by 1 desc");
+            string UspsFacilitydimcolumn = ufd.ColumnNames("UspsFacilitydim");
+            
+            ufd.SourceTargetValidation(@"select top 100000" + " " + UspsFacilitydimcolumn + " " + "from dbo.UspsFacilitydim order by 1 desc");
 
         }
         [TestCategory("UspsFacilityDim")]
         [TestMethod]
         public void DataValidationForUspsFacilityDimByCounts()
         {
-            CommonMethods.SourceTargetValidation(@"select count(*) from dbo.UspsFacilitydim");
+            
+            ufd.SourceTargetValidation(@"select count(*) from dbo.UspsFacilitydim");
         }
         [TestCategory("UspsFacilityDim")]
         [TestMethod]
         public void DataValidationUspsFacilityDimCountsOfIndividualColumns()
         {
-            string dimcolumns = CommonMethods.ColumnNames("UspsFacilitydim");
+            string dimcolumns = ufd.ColumnNames("UspsFacilitydim");
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "UspsFacilitydim");
+                
+                ufd.SourceTargetValidation("select count( distinct " + word + ")" + " " + "from" + " " + "UspsFacilitydim");
             }
 
         }
@@ -37,11 +41,12 @@ namespace CloudReplicationTests
         [TestMethod]
         public void DataValidationForUspsFacilityDimBySumOfIntColumns()
         {
-            string dimcolumns = CommonMethods.IntColumnNames("UspsFacilitydim");
+            string dimcolumns = ufd.IntColumnNames("UspsFacilitydim");
             string[] words = dimcolumns.Split(',');
             foreach (string word in words)
             {
-                CommonMethods.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "UspsFacilitydim");
+                
+                ufd.SourceTargetValidation("select sum(cast(" + word + " as bigint))" + " " + "from" + " " + "UspsFacilitydim");
             }
 
         }
