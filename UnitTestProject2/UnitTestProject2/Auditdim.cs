@@ -11,7 +11,7 @@ namespace CloudReplicationTests
         public void AuditDimReplicationValidation()
         {
             
-            ad.SourceTargetValidation(@"select * from dbo.auditdim");
+            ad.SourceTargetValidation(@"select * from dbo.auditdim order by 1 desc");
         }
         [TestCategory("AuditDim")]
         [TestMethod]

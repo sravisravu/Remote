@@ -15,7 +15,7 @@ namespace CloudReplicationTests
         [TestMethod]
         public void DateDimReplicationValidation()
         {            
-            datedim.SourceTargetValidation(@"select top 1000 * from" + " " + datedimtable);
+            datedim.SourceTargetValidation(@"select top 1000 datekey from" + " " + datedimtable+" "+"order by 1 desc");
         }
         [TestCategory("DateDim")]
         [TestMethod]

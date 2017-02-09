@@ -13,8 +13,8 @@ namespace CloudReplicationTests
     {
         public static List<string> list = new List<string>(new string[] { "DateDim", "AddressDim", "AuditDim", "FacilityDim", "FwdContainer", "FwdPackage", "FwdUSPSPackage", "FwdUSPSPackageEvent", "OrgDim", "PostalCodeDim", "TrackingEventDim", "USPSFacilityDim", "USPSFacilityServiceZip", "USPSPricingCategoryDim", "USPSRateCategoryDim", "FwdTracking", "FwdPackageEvent" });
         public static string connStringdw = "Database=" + ConfigurationManager.AppSettings["sngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["sDBServer"] + ";User Id=etlprocess; password=etlprocess";
-        public static string connStringdw1 = "Server = tcp:" + ConfigurationManager.AppSettings["dDBServer"] + ",1433;Initial Catalog = DWCloud; Persist Security Info=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Authentication=Active Directory Integrated";
-        //public static string connStringdw1 = "Database=" + ConfigurationManager.AppSettings["dngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["dDBServer"] + ";User Id=etlprocess; password=etlprocess";
+        //public static string connStringdw1 = "Server = tcp:" + ConfigurationManager.AppSettings["dDBServer"] + ",1433;Initial Catalog = DWCloud; Persist Security Info=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Authentication=Active Directory Integrated";
+        public static string connStringdw1 = "Database=" + ConfigurationManager.AppSettings["dngsdwDBName"] + ";Data Source=" + ConfigurationManager.AppSettings["dDBServer"] + ";User Id=etlprocess6; password=etlprocess6p";
         int count;
         public static string schema = ConfigurationManager.AppSettings["schema"];
 
@@ -175,7 +175,7 @@ namespace CloudReplicationTests
                 {
                     for (int x = 0; x < DiffTable.Columns.Count; x++)
                     {
-                        result = result + row[x].ToString();
+                        result = result + row[x].ToString()+" ";
                     }
                     result = result + '\n';
                 }
@@ -187,6 +187,7 @@ namespace CloudReplicationTests
                 Console.WriteLine("Source and Target Match");
 
             }
+            count = 0;
         }
 
         public void SourceTargetChangeTracking(string sql,string sql1)
