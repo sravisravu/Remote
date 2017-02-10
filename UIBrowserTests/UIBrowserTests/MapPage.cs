@@ -1,7 +1,7 @@
-﻿using OpenQA.Selenium.Support.PageObjects;
+﻿using System;
+using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium;
 using System.Configuration;
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 
