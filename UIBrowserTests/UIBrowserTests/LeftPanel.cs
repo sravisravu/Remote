@@ -1,7 +1,8 @@
-﻿using OpenQA.Selenium.Support.PageObjects;
+﻿using System;
+using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+
 
 
 namespace UIBrowserTests
