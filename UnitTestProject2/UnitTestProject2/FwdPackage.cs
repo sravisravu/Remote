@@ -48,7 +48,7 @@ namespace CloudReplicationTests
 
         }*/
 
-        [TestCategory("FwdPackage")]
+       /* [TestCategory("FwdPackage")]
         [TestMethod]
         public void DataValidationForFwdPackagesUsingChangeTracking()
         {
@@ -56,7 +56,7 @@ namespace CloudReplicationTests
             string source = "DECLARE @CurrentTrackedVersion  bigint;SELECT @CurrentTrackedVersion = CHANGE_TRACKING_CURRENT_VERSION();DECLARE @LastTrackedVersion bigint = @CurrentTrackedVersion - 100;SELECT CT.FwdPackageKey FROM   CHANGETABLE(CHANGES[dbo].[FwdPackage], @LastTrackedVersion) AS CT left join[dbo].[FwdPackage] x on  CT.[FwdPackageKey] = x.[FwdPackageKey] WHERE CT.SYS_CHANGE_OPERATION = 'D' UNION SELECT CT.FwdPackageKey FROM   CHANGETABLE(CHANGES[dbo].[FwdPackage], @LastTrackedVersion) AS CT inner join[dbo].[FwdPackage] x on  CT.[FwdPackageKey] = x.[FwdPackageKey] WHERE CT.SYS_CHANGE_OPERATION != 'D' order by 1;";
             fp.SourceTargetChangeTracking(source, "select fwdpackagekey from dbo.fwdpackage where fwdpackagekey=");
 
-        }
+        }*/
 
     }
 }
