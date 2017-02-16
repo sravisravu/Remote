@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_-oVBcMi9Eea_iq9hI1kAKQ" name="SorDB" id="_H7S3EMi9Eea_iq9hI1kAKQ" label="SorDB" dataPackage="__PXMQMi9Eea_iq9hI1kAKQ" ContextMode="true" ContextId="_-M6QwMi9Eea_iq9hI1kAKQ" contextName="Default" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://devdb1:1433/sordb;" Port="context.SorDB_Port" Username="context.SorDB_Login" Password="context.SorDB_Password" ServerName="context.SorDB_Server" DatasourceName="" FileFieldName="" SID="context.SorDB_Database" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="context.SorDB_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.SorDB_Schema">
+    <taggedValue xmi:id="_-oVBcci9Eea_iq9hI1kAKQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_-pW8MMi9Eea_iq9hI1kAKQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_-0spgMi9Eea_iq9hI1kAKQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_-0spgci9Eea_iq9hI1kAKQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_-0spgsi9Eea_iq9hI1kAKQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_-0spg8i9Eea_iq9hI1kAKQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_-0sphMi9Eea_iq9hI1kAKQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_-0sphci9Eea_iq9hI1kAKQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_-97eAMi9Eea_iq9hI1kAKQ" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_-97eAci9Eea_iq9hI1kAKQ" tag="DB ProductVersion" value="12.00.2370"/>
+    <taggedValue xmi:id="_-97eAsi9Eea_iq9hI1kAKQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_-oVBcsi9Eea_iq9hI1kAKQ" key="CONN_PARA_KEY_USERNAME" value="context.SorDB_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="__PXMQMi9Eea_iq9hI1kAKQ" name="sordb" dataManager="_-oVBcMi9Eea_iq9hI1kAKQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMQci9Eea_iq9hI1kAKQ" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMQsi9Eea_iq9hI1kAKQ" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMQ8i9Eea_iq9hI1kAKQ" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMRMi9Eea_iq9hI1kAKQ" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMRci9Eea_iq9hI1kAKQ" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMRsi9Eea_iq9hI1kAKQ" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMR8i9Eea_iq9hI1kAKQ" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMSMi9Eea_iq9hI1kAKQ" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMSci9Eea_iq9hI1kAKQ" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMSsi9Eea_iq9hI1kAKQ" name="dbo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMS8i9Eea_iq9hI1kAKQ" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMTMi9Eea_iq9hI1kAKQ" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMTci9Eea_iq9hI1kAKQ" name="Reports"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMTsi9Eea_iq9hI1kAKQ" name="Support"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="__PXMT8i9Eea_iq9hI1kAKQ" name="sys"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

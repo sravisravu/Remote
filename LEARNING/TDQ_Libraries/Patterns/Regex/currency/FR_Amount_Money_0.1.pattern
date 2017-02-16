@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_SDN8UeG2EeaqJqSeXDHQbg" name="FR Amount Money">
+  <taggedValue xmi:id="_SDN8UuG2EeaqJqSeXDHQbg" tag="Description" value="Amount of money in French format"/>
+  <taggedValue xmi:id="_SDN8U-G2EeaqJqSeXDHQbg" tag="Purpose" value="3000 € | 35 k€ | 35 054 T€"/>
+  <taggedValue xmi:id="_SDN8VOG2EeaqJqSeXDHQbg" tag="Validation_Status" value="true"/>
+  <taggedValue xmi:id="_SDN8VeG2EeaqJqSeXDHQbg" tag="Status" value="Draft"/>
+  <taggedValue xmi:id="_SDN8VuG2EeaqJqSeXDHQbg" tag="Author"/>
+  <taggedValue xmi:id="_SDN8V-G2EeaqJqSeXDHQbg" tag="Version" value="0.1"/>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_SDN8WOG2EeaqJqSeXDHQbg" expressionType="REGEXP">
+    <expression xmi:id="_SDN8WeG2EeaqJqSeXDHQbg" body="'^(([1-9][0-9]{0,2}( [0-9]{3})*)|([1-9][0-9]*)|0)((,[0-9]{2} | (k|M|G|T))?| )(\$( (US|CA))?|\￡|\€|\￥)$'" language="SQL"/>
+  </components>
+</dataquality.domain.pattern:Pattern>

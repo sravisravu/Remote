@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_i6wiEOz3EeayEK1tAvNtaA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_i6wiEez3EeayEK1tAvNtaA" comment="" name="NgsCore1_Password" prompt="NgsCore1_Password?" promptNeeded="false" type="id_Password" value="8DRInXJ37r13v4h4eGfdfQ=="/>
+  <contextParameter xmi:id="_i6wiEuz3EeayEK1tAvNtaA" comment="" name="NgsCore1_Port" prompt="NgsCore1_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_i6wiE-z3EeayEK1tAvNtaA" comment="" name="NgsCore1_Database" prompt="NgsCore1_Database?" promptNeeded="false" type="id_String" value="NgsCore"/>
+  <contextParameter xmi:id="_i6wiFOz3EeayEK1tAvNtaA" comment="" name="NgsCore1_Server" prompt="NgsCore1_Server?" promptNeeded="false" type="id_String" value="devdb1"/>
+  <contextParameter xmi:id="_i6wiFez3EeayEK1tAvNtaA" comment="" name="NgsCore1_Schema" prompt="NgsCore1_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_i6wiFuz3EeayEK1tAvNtaA" comment="" name="NgsCore1_AdditionalParams" prompt="NgsCore1_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_i6wiF-z3EeayEK1tAvNtaA" comment="" name="NgsCore1_Login" prompt="NgsCore1_Login?" promptNeeded="false" type="id_String" value="etlprocess"/>
+</talendfile:ContextType>

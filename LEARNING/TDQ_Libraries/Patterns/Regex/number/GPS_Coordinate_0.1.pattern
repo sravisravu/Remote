@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_SDHOoOG2EeaqJqSeXDHQbg" name="GPS Coordinate">
+  <taggedValue xmi:id="_SDHOoeG2EeaqJqSeXDHQbg" tag="Description" value="Google Maps style GPS Decimal format"/>
+  <taggedValue xmi:id="_SDHOouG2EeaqJqSeXDHQbg" tag="Purpose" value="40.7127837,-74.00594130000002"/>
+  <taggedValue xmi:id="_SDHOo-G2EeaqJqSeXDHQbg" tag="Validation_Status" value="true"/>
+  <taggedValue xmi:id="_SDHOpOG2EeaqJqSeXDHQbg" tag="Status" value="Draft"/>
+  <taggedValue xmi:id="_SDHOpeG2EeaqJqSeXDHQbg" tag="Author"/>
+  <taggedValue xmi:id="_SDHOpuG2EeaqJqSeXDHQbg" tag="Version" value="0.1"/>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_SDHOp-G2EeaqJqSeXDHQbg" expressionType="REGEXP">
+    <expression xmi:id="_SDHOqOG2EeaqJqSeXDHQbg" body="'^([0-9]{1,3}[\.][0-9]*)[, ]+-?([0-9]{1,3}[\.][0-9]*)$'" language="SQL"/>
+  </components>
+</dataquality.domain.pattern:Pattern>

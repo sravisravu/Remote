@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="__JDdAO_aEeaT38zrwAwu6A" name="drouse_StateCodes" dataPackage="__JDdAe_aEeaT38zrwAwu6A" Server="Localhost 127.0.0.1" FilePath="C:/Users/DRouse/Documents/Projects/BI/Talend/Talend Training/DI Basic/Labs/Lab3/USStates.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="__JDdAe_aEeaT38zrwAwu6A" name="default" dataManager="__JDdAO_aEeaT38zrwAwu6A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__JDdAu_aEeaT38zrwAwu6A" id="_ZnzpMO_aEeaT38zrwAwu6A" label="StateCodeSchema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__JDdA-_aEeaT38zrwAwu6A" label="StateCode" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__JDdBO_aEeaT38zrwAwu6A" label="StateName" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

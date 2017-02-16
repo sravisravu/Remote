@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_T4mHgPOnEeaQSftR5-Ku_g" name="Output" id="_PJgiMPOnEeaQSftR5-Ku_g" label="Output" dataPackage="_WV8TsPOnEeaQSftR5-Ku_g" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://devdb2:1433/ngsdwsnap1;noDatetimeStringSync=true" Port="1433" Username="etlprocess" Password="8DRInXJ37r13v4h4eGfdfQ==" ServerName="devdb2" SID="ngsdwsnap1" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" UiSchema="dbo">
+    <taggedValue xmi:id="_T4mHgfOnEeaQSftR5-Ku_g" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_WTQMEPOnEeaQSftR5-Ku_g" tag="Status" value=""/>
+    <taggedValue xmi:id="_WTQMEfOnEeaQSftR5-Ku_g" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_WTQMEvOnEeaQSftR5-Ku_g" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_WTQME_OnEeaQSftR5-Ku_g" tag="Description" value=""/>
+    <taggedValue xmi:id="_WTQMFPOnEeaQSftR5-Ku_g" tag="Author" value=""/>
+    <taggedValue xmi:id="_WTQMFfOnEeaQSftR5-Ku_g" tag="otherParameter"/>
+    <taggedValue xmi:id="_WUilgPOnEeaQSftR5-Ku_g" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_WUilgfOnEeaQSftR5-Ku_g" tag="DB ProductVersion" value="12.00.5522"/>
+    <taggedValue xmi:id="_WUilgvOnEeaQSftR5-Ku_g" tag="DB IdentifierQuoteString" value="&quot;"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_WV8TsPOnEeaQSftR5-Ku_g" name="ngsdwsnap1" dataManager="_T4mHgPOnEeaQSftR5-Ku_g">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WV8TsfOnEeaQSftR5-Ku_g" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

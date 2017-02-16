@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_SDJq4OG2EeaqJqSeXDHQbg" name="UK SSN">
+  <taggedValue xmi:id="_SDJq4eG2EeaqJqSeXDHQbg" tag="Description" value="National identification number, national identity number, or national insurance number generally called an NI Number (NINO)"/>
+  <taggedValue xmi:id="_SDJq4uG2EeaqJqSeXDHQbg" tag="Purpose" value="AB123456C | AB 12 34 56 C"/>
+  <taggedValue xmi:id="_SDJq4-G2EeaqJqSeXDHQbg" tag="Validation_Status" value="true"/>
+  <taggedValue xmi:id="_SDJq5OG2EeaqJqSeXDHQbg" tag="Status" value="Draft"/>
+  <taggedValue xmi:id="_SDJq5eG2EeaqJqSeXDHQbg" tag="Author"/>
+  <taggedValue xmi:id="_SDJq5uG2EeaqJqSeXDHQbg" tag="Version" value="0.1"/>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_SDJq5-G2EeaqJqSeXDHQbg" expressionType="REGEXP">
+    <expression xmi:id="_SDJq6OG2EeaqJqSeXDHQbg" body="'^[A-CEGHJ-PR-TW-Z]{1}[A-CEGHJ-NPR-TW-Z]{1}([0-9]{6}|( [0-9]{2}){3} )[A-DFM]{0,1}$'" language="SQL"/>
+  </components>
+</dataquality.domain.pattern:Pattern>

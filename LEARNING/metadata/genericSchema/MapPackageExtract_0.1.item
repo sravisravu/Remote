@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_AtD1wO0PEeabdfG2ZOIBMA" comment="connectionComment" label="connectionLabel" dataPackage="_AtD1we0PEeabdfG2ZOIBMA"/>
+  <TalendMetadata:GenericPackage xmi:id="_AtD1we0PEeabdfG2ZOIBMA" dataManager="_AtD1wO0PEeabdfG2ZOIBMA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_AtD1wu0PEeabdfG2ZOIBMA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD1w-0PEeabdfG2ZOIBMA" name="NgsMerchantID" id="243" label="NgsMerchantID" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_AtD1xO0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD1xe0PEeabdfG2ZOIBMA" name="WarehouseNgsFacilityNum" id="244" label="WarehouseNgsFacilityNum" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_AtD1xu0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD1x-0PEeabdfG2ZOIBMA" name="CarrierCode" id="245" label="CarrierCode" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_AtD1yO0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD1ye0PEeabdfG2ZOIBMA" name="CarrierCodeFiller" id="246" label="CarrierCodeFiller" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_AtD1yu0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD1y-0PEeabdfG2ZOIBMA" name="ClassOfServiceCode" id="247" label="ClassOfServiceCode" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_AtD1zO0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD1ze0PEeabdfG2ZOIBMA" name="ClassOfServiceCodeFiller" id="248" label="ClassOfServiceCodeFiller" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_AtD1zu0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD1z-0PEeabdfG2ZOIBMA" name="ActualCarrierCode" id="249" label="ActualCarrierCode" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_AtD10O0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD10e0PEeabdfG2ZOIBMA" name="RateShopCode" id="250" label="RateShopCode" length="50" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_AtD10u0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD10-0PEeabdfG2ZOIBMA" name="RateShopCodeFiller" id="251" label="RateShopCodeFiller" length="50" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_AtD11O0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD11e0PEeabdfG2ZOIBMA" name="MappingID" id="252" label="MappingID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_AtD11u0PEeabdfG2ZOIBMA" body="1"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD11-0PEeabdfG2ZOIBMA" name="KewillCarrierInstanceID" id="253" label="KewillCarrierInstanceID" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_AtD12O0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD12e0PEeabdfG2ZOIBMA" name="MerchantOrgID" id="254" label="MerchantOrgID" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_AtD12u0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD12-0PEeabdfG2ZOIBMA" name="WarehouseFacilityID" id="255" label="WarehouseFacilityID" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_AtD13O0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD13e0PEeabdfG2ZOIBMA" name="CarrierServiceID" id="256" label="CarrierServiceID" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_AtD13u0PEeabdfG2ZOIBMA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AtD13-0PEeabdfG2ZOIBMA" name="RateShopID" id="257" label="RateShopID" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_AtD14O0PEeabdfG2ZOIBMA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

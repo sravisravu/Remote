@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_SDEyYOG2EeaqJqSeXDHQbg" name="MAC Address">
+  <taggedValue xmi:id="_SDEyYeG2EeaqJqSeXDHQbg" tag="Description" value="Match MAC Address"/>
+  <taggedValue xmi:id="_SDEyYuG2EeaqJqSeXDHQbg" tag="Purpose" value="A4:4E:31:B9:C5:B4"/>
+  <taggedValue xmi:id="_SDEyY-G2EeaqJqSeXDHQbg" tag="Validation_Status" value="true"/>
+  <taggedValue xmi:id="_SDEyZOG2EeaqJqSeXDHQbg" tag="Status" value="Draft"/>
+  <taggedValue xmi:id="_SDEyZeG2EeaqJqSeXDHQbg" tag="Author"/>
+  <taggedValue xmi:id="_SDEyZuG2EeaqJqSeXDHQbg" tag="Version" value="0.1"/>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_SDEyZ-G2EeaqJqSeXDHQbg" expressionType="REGEXP">
+    <expression xmi:id="_SDEyaOG2EeaqJqSeXDHQbg" body="'^([0-9a-fA-F][0-9a-fA-F]:){5}([0-9a-fA-F][0-9a-fA-F])$'" language="SQL"/>
+  </components>
+</dataquality.domain.pattern:Pattern>

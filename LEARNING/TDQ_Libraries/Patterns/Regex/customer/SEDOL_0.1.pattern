@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_SC_S0OG2EeaqJqSeXDHQbg" name="SEDOL">
+  <taggedValue xmi:id="_SC_S0eG2EeaqJqSeXDHQbg" tag="Description" value="Stock Exchange Daily Official List "/>
+  <taggedValue xmi:id="_SC_S0uG2EeaqJqSeXDHQbg" tag="Purpose" value="B01HL06 | 4155586"/>
+  <taggedValue xmi:id="_SC_S0-G2EeaqJqSeXDHQbg" tag="Validation_Status" value="true"/>
+  <taggedValue xmi:id="_SC_S1OG2EeaqJqSeXDHQbg" tag="Status" value="Draft"/>
+  <taggedValue xmi:id="_SC_S1eG2EeaqJqSeXDHQbg" tag="Author"/>
+  <taggedValue xmi:id="_SC_S1uG2EeaqJqSeXDHQbg" tag="Version" value="0.1"/>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_SC_S1-G2EeaqJqSeXDHQbg" expressionType="REGEXP">
+    <expression xmi:id="_SC_S2OG2EeaqJqSeXDHQbg" body="'^([B-Db-dF-Hf-hJ-Nj-nP-Tp-tV-Xv-xYyZz0-9]{6}[0-9])$'" language="SQL"/>
+  </components>
+</dataquality.domain.pattern:Pattern>

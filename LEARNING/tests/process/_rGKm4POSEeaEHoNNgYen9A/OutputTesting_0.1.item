@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcontainer:TestContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:testcontainer="http://www.talend.com/testcontainer.ecore" xmi:id="_5BsAYPOvEeaQSftR5-Ku_g" defaultContext="Default" jobType="Standard" originalJobID="_rGKm4POSEeaEHoNNgYen9A" parentVersion="0.1">
+  <context xmi:id="_5BsAYfOvEeaQSftR5-Ku_g" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_5BsAYvOvEeaQSftR5-Ku_g" comment="" name="input_file1" prompt="input_file1?" promptNeeded="false" type="id_File" value=""/>
+  </context>
+  <parameters xmi:id="_5BsAY_OvEeaQSftR5-Ku_g">
+    <elementParameter xmi:id="_5BsAZPOvEeaQSftR5-Ku_g" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_5BsAZfOvEeaQSftR5-Ku_g" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_5BsAZvOvEeaQSftR5-Ku_g" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAZ_OvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAaPOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAafOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAavOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAa_OvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAbPOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAbfOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAbvOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAb_OvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAcPOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAcfOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAcvOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAc_OvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAdPOvEeaQSftR5-Ku_g" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAdfOvEeaQSftR5-Ku_g" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAdvOvEeaQSftR5-Ku_g" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAd_OvEeaQSftR5-Ku_g" field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter xmi:id="_5BsAePOvEeaQSftR5-Ku_g" field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter xmi:id="_5BsAefOvEeaQSftR5-Ku_g" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter xmi:id="_5BsAevOvEeaQSftR5-Ku_g" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAe_OvEeaQSftR5-Ku_g" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAfPOvEeaQSftR5-Ku_g" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Users/smailavaram/workspace/in.csv&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAffOvEeaQSftR5-Ku_g" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAfvOvEeaQSftR5-Ku_g" field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAf_OvEeaQSftR5-Ku_g" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+    <elementParameter xmi:id="_5BsAgPOvEeaQSftR5-Ku_g" field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAgfOvEeaQSftR5-Ku_g" field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter xmi:id="_5BsAgvOvEeaQSftR5-Ku_g" field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAg_OvEeaQSftR5-Ku_g" field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAhPOvEeaQSftR5-Ku_g" field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAhfOvEeaQSftR5-Ku_g" field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAhvOvEeaQSftR5-Ku_g" field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAh_OvEeaQSftR5-Ku_g" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAiPOvEeaQSftR5-Ku_g" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAifOvEeaQSftR5-Ku_g" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAivOvEeaQSftR5-Ku_g" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_5BsAi_OvEeaQSftR5-Ku_g" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAjPOvEeaQSftR5-Ku_g" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAjfOvEeaQSftR5-Ku_g" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAjvOvEeaQSftR5-Ku_g" field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_5BsAj_OvEeaQSftR5-Ku_g" field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_5BsAkPOvEeaQSftR5-Ku_g" field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAkfOvEeaQSftR5-Ku_g" field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAkvOvEeaQSftR5-Ku_g" field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_5BsAk_OvEeaQSftR5-Ku_g" field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter xmi:id="_5BsAlPOvEeaQSftR5-Ku_g" field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_5BsAlfOvEeaQSftR5-Ku_g" field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_5BsAlvOvEeaQSftR5-Ku_g" field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_5BsAl_OvEeaQSftR5-Ku_g" field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAmPOvEeaQSftR5-Ku_g" field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAmfOvEeaQSftR5-Ku_g" field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/smailavaram/workspace/.metadata&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAmvOvEeaQSftR5-Ku_g" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAm_OvEeaQSftR5-Ku_g" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAnPOvEeaQSftR5-Ku_g" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAnfOvEeaQSftR5-Ku_g" field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_5BsAnvOvEeaQSftR5-Ku_g" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_5BsAn_OvEeaQSftR5-Ku_g" field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAoPOvEeaQSftR5-Ku_g" field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter xmi:id="_5BsAofOvEeaQSftR5-Ku_g" field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter xmi:id="_5BsAovOvEeaQSftR5-Ku_g" field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAo_OvEeaQSftR5-Ku_g" field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_5BsApPOvEeaQSftR5-Ku_g" field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsApfOvEeaQSftR5-Ku_g" field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsApvOvEeaQSftR5-Ku_g" field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAp_OvEeaQSftR5-Ku_g" field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAqPOvEeaQSftR5-Ku_g" field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAqfOvEeaQSftR5-Ku_g" field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAqvOvEeaQSftR5-Ku_g" field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAq_OvEeaQSftR5-Ku_g" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsArPOvEeaQSftR5-Ku_g" field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsArfOvEeaQSftR5-Ku_g" field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_5BsArvOvEeaQSftR5-Ku_g" field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAr_OvEeaQSftR5-Ku_g" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAsPOvEeaQSftR5-Ku_g" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAsfOvEeaQSftR5-Ku_g" field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAsvOvEeaQSftR5-Ku_g" field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_5BsAs_OvEeaQSftR5-Ku_g" field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_5BsAtPOvEeaQSftR5-Ku_g" field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter xmi:id="_5BsAtfOvEeaQSftR5-Ku_g" field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAtvOvEeaQSftR5-Ku_g" field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAt_OvEeaQSftR5-Ku_g" field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAuPOvEeaQSftR5-Ku_g" field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAufOvEeaQSftR5-Ku_g" field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAuvOvEeaQSftR5-Ku_g" field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAu_OvEeaQSftR5-Ku_g" field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAvPOvEeaQSftR5-Ku_g" field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsAvfOvEeaQSftR5-Ku_g" field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAvvOvEeaQSftR5-Ku_g" field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_5BsAv_OvEeaQSftR5-Ku_g" field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter xmi:id="_pdw08vOuEeaQSftR5-Ku_g" id="_7H1GAOGyEeaqJqSeXDHQbg" name="DQTechnical"/>
+    <routinesParameter xmi:id="_pdw08_OuEeaQSftR5-Ku_g" id="_7E9_QOGyEeaqJqSeXDHQbg" name="DataMasking"/>
+    <routinesParameter xmi:id="_pdw09POuEeaQSftR5-Ku_g" id="_7IiQoOGyEeaqJqSeXDHQbg" name="DataOperation"/>
+    <routinesParameter xmi:id="_pdw09fOuEeaQSftR5-Ku_g" id="_7HV90OGyEeaqJqSeXDHQbg" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_pdw09vOuEeaQSftR5-Ku_g" id="_7HDC4OGyEeaqJqSeXDHQbg" name="DataQuality"/>
+    <routinesParameter xmi:id="_pdw09_OuEeaQSftR5-Ku_g" id="_7HcEcOGyEeaqJqSeXDHQbg" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_pdw0-POuEeaQSftR5-Ku_g" id="_7IoXQOGyEeaqJqSeXDHQbg" name="Mathematical"/>
+    <routinesParameter xmi:id="_pdw0-fOuEeaQSftR5-Ku_g" id="_7ItPwOGyEeaqJqSeXDHQbg" name="Numeric"/>
+    <routinesParameter xmi:id="_pdw0-vOuEeaQSftR5-Ku_g" id="_7IyvUOGyEeaqJqSeXDHQbg" name="Relational"/>
+    <routinesParameter xmi:id="_pdw0-_OuEeaQSftR5-Ku_g" id="_7IaU0OGyEeaqJqSeXDHQbg" name="SQLike"/>
+    <routinesParameter xmi:id="_pdw0_POuEeaQSftR5-Ku_g" id="_7I3AwOGyEeaqJqSeXDHQbg" name="StringHandling"/>
+    <routinesParameter xmi:id="_pdw0_fOuEeaQSftR5-Ku_g" id="_7I6EEOGyEeaqJqSeXDHQbg" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_pdw0_vOuEeaQSftR5-Ku_g" id="_7I9HYOGyEeaqJqSeXDHQbg" name="TalendDate"/>
+    <routinesParameter xmi:id="_pdw0__OuEeaQSftR5-Ku_g" id="_7JB_4OGyEeaqJqSeXDHQbg" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_5BsAwPOvEeaQSftR5-Ku_g" componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+    <elementParameter xmi:id="_5BsAwfOvEeaQSftR5-Ku_g" field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_5BsAwvOvEeaQSftR5-Ku_g" field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter xmi:id="_5BsAw_OvEeaQSftR5-Ku_g" field="FILE" name="FILENAME" value="context.input_file1"/>
+    <elementParameter xmi:id="_5BsAxPOvEeaQSftR5-Ku_g" field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter xmi:id="_5BsAxfOvEeaQSftR5-Ku_g" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_5BsAxvOvEeaQSftR5-Ku_g" field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAx_OvEeaQSftR5-Ku_g" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter xmi:id="_5BsAyPOvEeaQSftR5-Ku_g" field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAyfOvEeaQSftR5-Ku_g" field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsAyvOvEeaQSftR5-Ku_g" field="TEXT" name="HEADER" value="0"/>
+    <elementParameter xmi:id="_5BsAy_OvEeaQSftR5-Ku_g" field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter xmi:id="_5BsAzPOvEeaQSftR5-Ku_g" field="TEXT" name="LIMIT" value=""/>
+    <elementParameter xmi:id="_5BsAzfOvEeaQSftR5-Ku_g" field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter xmi:id="_5BsAzvOvEeaQSftR5-Ku_g" field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter xmi:id="_5BsAz_OvEeaQSftR5-Ku_g" field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter xmi:id="_5BsA0POvEeaQSftR5-Ku_g" field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/smailavaram/workspace&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsA0fOvEeaQSftR5-Ku_g" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_5BsA0vOvEeaQSftR5-Ku_g" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsA0_OvEeaQSftR5-Ku_g" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_5BsA1POvEeaQSftR5-Ku_g" field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter xmi:id="_5BsA1fOvEeaQSftR5-Ku_g" field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter xmi:id="_5BsA1vOvEeaQSftR5-Ku_g" field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter xmi:id="_5BsA1_OvEeaQSftR5-Ku_g" field="TABLE" name="TRIMSELECT">
+      <elementValue xmi:id="_5BsA2POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DateKey"/>
+      <elementValue xmi:id="_5BsA2fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA2vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayDate"/>
+      <elementValue xmi:id="_5BsA2_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA3POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DateDescription"/>
+      <elementValue xmi:id="_5BsA3fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA3vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DateUSA"/>
+      <elementValue xmi:id="_5BsA3_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA4POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayOfWeek"/>
+      <elementValue xmi:id="_5BsA4fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA4vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="MonthName"/>
+      <elementValue xmi:id="_5BsA4_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA5POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayNumInWeek"/>
+      <elementValue xmi:id="_5BsA5fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA5vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayNumInMonth"/>
+      <elementValue xmi:id="_5BsA5_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA6POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayNumInYear"/>
+      <elementValue xmi:id="_5BsA6fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA6vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="MonthNumInYear"/>
+      <elementValue xmi:id="_5BsA6_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA7POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="WeekNumInYear"/>
+      <elementValue xmi:id="_5BsA7fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA7vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="CalYear"/>
+      <elementValue xmi:id="_5BsA7_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA8POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="CalYearMonth"/>
+      <elementValue xmi:id="_5BsA8fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA8vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="MonthBeginDate"/>
+      <elementValue xmi:id="_5BsA8_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA9POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="WeekBeginDate"/>
+      <elementValue xmi:id="_5BsA9fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA9vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="WeekEndDate"/>
+      <elementValue xmi:id="_5BsA9_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA-POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="BusinessDayFlag"/>
+      <elementValue xmi:id="_5BsA-fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA-vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalWeek"/>
+      <elementValue xmi:id="_5BsA-_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA_POvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalMonth"/>
+      <elementValue xmi:id="_5BsA_fOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsA_vOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalQuarter"/>
+      <elementValue xmi:id="_5BsA__OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBAPOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalYear"/>
+      <elementValue xmi:id="_5BsBAfOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBAvOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FirstDayInMonthFlag"/>
+      <elementValue xmi:id="_5BsBA_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBBPOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="LastDayInMonthFlag"/>
+      <elementValue xmi:id="_5BsBBfOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBBvOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FirstDayFiscalMonthFlag"/>
+      <elementValue xmi:id="_5BsBB_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBCPOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="WeekSeqNum"/>
+      <elementValue xmi:id="_5BsBCfOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBCvOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalMonthName"/>
+      <elementValue xmi:id="_5BsBC_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBDPOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalYearMonth"/>
+      <elementValue xmi:id="_5BsBDfOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBDvOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="PostalDayFlag"/>
+      <elementValue xmi:id="_5BsBD_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBEPOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="CalQuarter"/>
+      <elementValue xmi:id="_5BsBEfOvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_5BsBEvOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="CalWeek"/>
+      <elementValue xmi:id="_5BsBE_OvEeaQSftR5-Ku_g" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_5BsBFPOvEeaQSftR5-Ku_g" field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter xmi:id="_5BsBFfOvEeaQSftR5-Ku_g" field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter xmi:id="_5BsBFvOvEeaQSftR5-Ku_g" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_5BsBF_OvEeaQSftR5-Ku_g" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_5BsBGPOvEeaQSftR5-Ku_g" field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter xmi:id="_5BsBGfOvEeaQSftR5-Ku_g" field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter xmi:id="_5BsBGvOvEeaQSftR5-Ku_g" field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue xmi:id="_5BsBG_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DateKey"/>
+      <elementValue xmi:id="_5BsBHPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBHfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayDate"/>
+      <elementValue xmi:id="_5BsBHvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBH_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DateDescription"/>
+      <elementValue xmi:id="_5BsBIPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBIfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DateUSA"/>
+      <elementValue xmi:id="_5BsBIvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBI_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayOfWeek"/>
+      <elementValue xmi:id="_5BsBJPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBJfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="MonthName"/>
+      <elementValue xmi:id="_5BsBJvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBJ_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayNumInWeek"/>
+      <elementValue xmi:id="_5BsBKPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBKfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayNumInMonth"/>
+      <elementValue xmi:id="_5BsBKvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBK_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="DayNumInYear"/>
+      <elementValue xmi:id="_5BsBLPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBLfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="MonthNumInYear"/>
+      <elementValue xmi:id="_5BsBLvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBL_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="WeekNumInYear"/>
+      <elementValue xmi:id="_5BsBMPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBMfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="CalYear"/>
+      <elementValue xmi:id="_5BsBMvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBM_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="CalYearMonth"/>
+      <elementValue xmi:id="_5BsBNPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBNfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="MonthBeginDate"/>
+      <elementValue xmi:id="_5BsBNvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBN_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="WeekBeginDate"/>
+      <elementValue xmi:id="_5BsBOPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBOfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="WeekEndDate"/>
+      <elementValue xmi:id="_5BsBOvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBO_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="BusinessDayFlag"/>
+      <elementValue xmi:id="_5BsBPPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBPfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalWeek"/>
+      <elementValue xmi:id="_5BsBPvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBP_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalMonth"/>
+      <elementValue xmi:id="_5BsBQPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBQfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalQuarter"/>
+      <elementValue xmi:id="_5BsBQvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBQ_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalYear"/>
+      <elementValue xmi:id="_5BsBRPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBRfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FirstDayInMonthFlag"/>
+      <elementValue xmi:id="_5BsBRvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBR_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="LastDayInMonthFlag"/>
+      <elementValue xmi:id="_5BsBSPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBSfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FirstDayFiscalMonthFlag"/>
+      <elementValue xmi:id="_5BsBSvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBS_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="WeekSeqNum"/>
+      <elementValue xmi:id="_5BsBTPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBTfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalMonthName"/>
+      <elementValue xmi:id="_5BsBTvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBT_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="FiscalYearMonth"/>
+      <elementValue xmi:id="_5BsBUPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBUfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="PostalDayFlag"/>
+      <elementValue xmi:id="_5BsBUvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBU_OvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="CalQuarter"/>
+      <elementValue xmi:id="_5BsBVPOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_5BsBVfOvEeaQSftR5-Ku_g" elementRef="SCHEMA_COLUMN" value="CalWeek"/>
+      <elementValue xmi:id="_5BsBVvOvEeaQSftR5-Ku_g" elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_5BsBV_OvEeaQSftR5-Ku_g" field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter xmi:id="_5BsBWPOvEeaQSftR5-Ku_g" field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter xmi:id="_5BsBWfOvEeaQSftR5-Ku_g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_5BsBWvOvEeaQSftR5-Ku_g" connector="FLOW" name="tFileInputDelimited_1">
+      <column xmi:id="_5BsBW_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="true" length="10" name="DateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBXPOvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="DayDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBXfOvEeaQSftR5-Ku_g" comment="" key="false" length="100" name="DateDescription" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBXvOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="DateUSA" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBX_OvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="DayOfWeek" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBYPOvEeaQSftR5-Ku_g" comment="" key="false" length="15" name="MonthName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBYfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInWeek" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBYvOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInMonth" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBY_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBZPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="MonthNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBZfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="WeekNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBZvOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="CalYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBZ_OvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="CalYearMonth" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBaPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="23" name="MonthBeginDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBafOvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="WeekBeginDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBavOvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="WeekEndDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBa_OvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="BusinessDayFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBbPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalWeek" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBbfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalMonth" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBbvOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalQuarter" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBb_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalYear" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBcPOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="FirstDayInMonthFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBcfOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="LastDayInMonthFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBcvOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="FirstDayFiscalMonthFlag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBc_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="WeekSeqNum" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBdPOvEeaQSftR5-Ku_g" comment="" key="false" length="20" name="FiscalMonthName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBdfOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="FiscalYearMonth" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBdvOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="PostalDayFlag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBd_OvEeaQSftR5-Ku_g" comment="" key="false" length="7" name="CalQuarter" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBePOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="3" name="CalWeek" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata xmi:id="_5BsBefOvEeaQSftR5-Ku_g" connector="REJECT" name="REJECT">
+      <column xmi:id="_5BsBevOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="true" length="10" name="DateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBe_OvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="DayDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBfPOvEeaQSftR5-Ku_g" comment="" key="false" length="100" name="DateDescription" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBffOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="DateUSA" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBfvOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="DayOfWeek" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBf_OvEeaQSftR5-Ku_g" comment="" key="false" length="15" name="MonthName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBgPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInWeek" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBgfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInMonth" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBgvOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBg_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="MonthNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBhPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="WeekNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBhfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="CalYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBhvOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="CalYearMonth" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBh_OvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="MonthBeginDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBiPOvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="WeekBeginDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBifOvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="WeekEndDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBivOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="BusinessDayFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBi_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalWeek" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBjPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalMonth" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBjfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalQuarter" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBjvOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalYear" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBj_OvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="FirstDayInMonthFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBkPOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="LastDayInMonthFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBkfOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="FirstDayFiscalMonthFlag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBkvOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="WeekSeqNum" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBk_OvEeaQSftR5-Ku_g" comment="" key="false" length="20" name="FiscalMonthName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBlPOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="FiscalYearMonth" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBlfOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="PostalDayFlag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBlvOvEeaQSftR5-Ku_g" comment="" key="false" length="7" name="CalQuarter" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBl_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="3" name="CalWeek" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBmPOvEeaQSftR5-Ku_g" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBmfOvEeaQSftR5-Ku_g" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_5BsBmvOvEeaQSftR5-Ku_g" componentName="tAssert" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="416">
+    <elementParameter xmi:id="_5BsBm_OvEeaQSftR5-Ku_g" field="TEXT" name="UNIQUE_NAME" value="tAssert_1" show="false"/>
+    <elementParameter xmi:id="_5BsBnPOvEeaQSftR5-Ku_g" field="TEXT" name="DESCRIPTION" value="&quot;input and output dot match&quot;"/>
+    <elementParameter xmi:id="_5BsBnfOvEeaQSftR5-Ku_g" field="MEMO_JAVA" name="EXPRESSION" value="((Boolean)globalMap.get(&quot;tFileInputDelimited_1&quot;))"/>
+    <elementParameter xmi:id="_5BsBnvOvEeaQSftR5-Ku_g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_5BsBn_OvEeaQSftR5-Ku_g" connector="FLOW" name="tAssert_1">
+      <column xmi:id="_5BsBoPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="true" length="10" name="DateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBofOvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="DayDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBovOvEeaQSftR5-Ku_g" comment="" key="false" length="100" name="DateDescription" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBo_OvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="DateUSA" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBpPOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="DayOfWeek" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBpfOvEeaQSftR5-Ku_g" comment="" key="false" length="15" name="MonthName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBpvOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInWeek" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBp_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInMonth" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBqPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBqfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="MonthNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBqvOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="WeekNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBq_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="CalYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBrPOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="CalYearMonth" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBrfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="23" name="MonthBeginDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBrvOvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="WeekBeginDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBr_OvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="WeekEndDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBsPOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="BusinessDayFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBsfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalWeek" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBsvOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalMonth" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBs_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalQuarter" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBtPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalYear" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBtfOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="FirstDayInMonthFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBtvOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="LastDayInMonthFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBt_OvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="FirstDayFiscalMonthFlag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBuPOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="WeekSeqNum" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBufOvEeaQSftR5-Ku_g" comment="" key="false" length="20" name="FiscalMonthName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBuvOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="FiscalYearMonth" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBu_OvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="PostalDayFlag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBvPOvEeaQSftR5-Ku_g" comment="" key="false" length="7" name="CalQuarter" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBvfOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="3" name="CalWeek" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBvvOvEeaQSftR5-Ku_g" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsBv_OvEeaQSftR5-Ku_g" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection xmi:id="_5BsBwPOvEeaQSftR5-Ku_g" connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputDelimited_1" target="INPUT_1">
+    <elementParameter xmi:id="_5BsBwfOvEeaQSftR5-Ku_g" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_5BsBwvOvEeaQSftR5-Ku_g" field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection xmi:id="_5BsBw_OvEeaQSftR5-Ku_g" connectorName="REJECT" label="row3" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileInputDelimited_1" target="tAssert_1">
+    <elementParameter xmi:id="_5BsBxPOvEeaQSftR5-Ku_g" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_5BsBxfOvEeaQSftR5-Ku_g" field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection xmi:id="_5BsBxvOvEeaQSftR5-Ku_g" connectorName="FLOW" label="row1" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tFileOutputDelimited_2">
+    <elementParameter xmi:id="_5BsBx_OvEeaQSftR5-Ku_g" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_5BsByPOvEeaQSftR5-Ku_g" field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <note xmi:id="_5BsByfOvEeaQSftR5-Ku_g" opaque="true" posX="480" posY="0" sizeHeight="64" sizeWidth="360" text="This Test Case has been created automatically&#xD;&#xA;please setup all the datasets"/>
+  <subjob xmi:id="_5BsByvOvEeaQSftR5-Ku_g">
+    <elementParameter xmi:id="_5BsBy_OvEeaQSftR5-Ku_g" field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_5BsBzPOvEeaQSftR5-Ku_g" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5BsBzfOvEeaQSftR5-Ku_g" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <testContainerNodes xmi:id="_5BsBz_OvEeaQSftR5-Ku_g" componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192" input="true">
+    <elementParameter xmi:id="_5BsB0POvEeaQSftR5-Ku_g" field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+    <elementParameter xmi:id="_5BsB0fOvEeaQSftR5-Ku_g" field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter xmi:id="_5BsB0vOvEeaQSftR5-Ku_g" field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter xmi:id="_5BsB0_OvEeaQSftR5-Ku_g" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter xmi:id="_5BsB1POvEeaQSftR5-Ku_g" field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter xmi:id="_5BsB1fOvEeaQSftR5-Ku_g" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5BsB1vOvEeaQSftR5-Ku_g" field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter xmi:id="_5BsB1_OvEeaQSftR5-Ku_g" field="MEMO" name="COMMENT" value=""/>
+    <metadata xmi:id="_5BsB2POvEeaQSftR5-Ku_g" connector="FLOW" name="INPUT_1">
+      <column xmi:id="_5BsB2fOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="true" length="10" name="DateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB2vOvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="DayDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB2_OvEeaQSftR5-Ku_g" comment="" key="false" length="100" name="DateDescription" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB3POvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="DateUSA" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB3fOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="DayOfWeek" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB3vOvEeaQSftR5-Ku_g" comment="" key="false" length="15" name="MonthName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB3_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInWeek" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB4POvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInMonth" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB4fOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="DayNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB4vOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="MonthNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB4_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="WeekNumInYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB5POvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="CalYear" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB5fOvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="CalYearMonth" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB5vOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="23" name="MonthBeginDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB5_OvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="WeekBeginDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB6POvEeaQSftR5-Ku_g" comment="" key="false" length="23" name="WeekEndDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB6fOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="BusinessDayFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB6vOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalWeek" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB6_OvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalMonth" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB7POvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalQuarter" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB7fOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="FiscalYear" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB7vOvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="FirstDayInMonthFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB7_OvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="LastDayInMonthFlag" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB8POvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="FirstDayFiscalMonthFlag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB8fOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="10" name="WeekSeqNum" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB8vOvEeaQSftR5-Ku_g" comment="" key="false" length="20" name="FiscalMonthName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB8_OvEeaQSftR5-Ku_g" comment="" key="false" length="10" name="FiscalYearMonth" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB9POvEeaQSftR5-Ku_g" comment="" key="false" length="30" name="PostalDayFlag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB9fOvEeaQSftR5-Ku_g" comment="" key="false" length="7" name="CalQuarter" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_5BsB9vOvEeaQSftR5-Ku_g" comment="" defaultValue="" key="false" length="3" name="CalWeek" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </testContainerNodes>
+  <OriginalNodes xmi:id="_5BsB9_OvEeaQSftR5-Ku_g" uniqueName="tFileOutputDelimited_2" posX="1056" posY="160" start="true"/>
+  <testInstanceList xmi:id="_qwbWsPOuEeaQSftR5-Ku_g" name="Default" contextInstance="Default" displayName="Default" forbidDelete="true" testContainerID="_pdwN4POuEeaQSftR5-Ku_g">
+    <testDatas xmi:id="_qwbWsfOuEeaQSftR5-Ku_g" paramemterName="input_file1" name="input_file1"/>
+  </testInstanceList>
+</testcontainer:TestContainer>

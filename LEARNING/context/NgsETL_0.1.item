@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_i7zq8Oz3EeayEK1tAvNtaA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_i7zq8ez3EeayEK1tAvNtaA" comment="" name="NgsETL_Login" prompt="NgsETL_Login?" promptNeeded="false" type="id_String" value="etlprocess"/>
+  <contextParameter xmi:id="_i7zq8uz3EeayEK1tAvNtaA" comment="" name="NgsETL_Schema" prompt="NgsETL_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_i7zq8-z3EeayEK1tAvNtaA" comment="" name="NgsETL_Server" prompt="NgsETL_Server?" promptNeeded="false" type="id_String" value="devdb1"/>
+  <contextParameter xmi:id="_i7zq9Oz3EeayEK1tAvNtaA" comment="" name="NgsETL_AdditionalParams" prompt="NgsETL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_i7zq9ez3EeayEK1tAvNtaA" comment="" name="NgsETL_Password" prompt="NgsETL_Password?" promptNeeded="false" type="id_Password" value="8DRInXJ37r13v4h4eGfdfQ=="/>
+  <contextParameter xmi:id="_i7zq9uz3EeayEK1tAvNtaA" comment="" name="NgsETL_Database" prompt="NgsETL_Database?" promptNeeded="false" type="id_String" value="NgsETL"/>
+  <contextParameter xmi:id="_i7zq9-z3EeayEK1tAvNtaA" comment="" name="NgsETL_Port" prompt="NgsETL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+</talendfile:ContextType>

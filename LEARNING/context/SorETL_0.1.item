@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_CCh6UOxTEeavjf10kTnWmg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_CCh6UexTEeavjf10kTnWmg" comment="" name="SorETL_Schema" prompt="SorETL_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_CCh6UuxTEeavjf10kTnWmg" comment="" name="SorETL_Password" prompt="SorETL_Password?" promptNeeded="false" type="id_Password" value="8DRInXJ37r13v4h4eGfdfQ=="/>
+  <contextParameter xmi:id="_CCh6U-xTEeavjf10kTnWmg" comment="" name="SorETL_AdditionalParams" prompt="SorETL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_CCh6VOxTEeavjf10kTnWmg" comment="" name="SorETL_Database" prompt="SorETL_Database?" promptNeeded="false" type="id_String" value="soretl"/>
+  <contextParameter xmi:id="_CCh6VexTEeavjf10kTnWmg" comment="" name="SorETL_Server" prompt="SorETL_Server?" promptNeeded="false" type="id_String" value="devdb1"/>
+  <contextParameter xmi:id="_CCh6VuxTEeavjf10kTnWmg" comment="" name="SorETL_Port" prompt="SorETL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_CCh6V-xTEeavjf10kTnWmg" comment="" name="SorETL_Login" prompt="SorETL_Login?" promptNeeded="false" type="id_String" value="etlprocess"/>
+</talendfile:ContextType>

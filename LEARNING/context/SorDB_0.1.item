@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_i8Gl4Oz3EeayEK1tAvNtaA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_i8Gl4ez3EeayEK1tAvNtaA" comment="" name="SorDB_Password" prompt="SorDB_Password?" promptNeeded="false" type="id_Password" value="8DRInXJ37r13v4h4eGfdfQ=="/>
+  <contextParameter xmi:id="_i8Gl4uz3EeayEK1tAvNtaA" comment="" name="SorDB_Port" prompt="SorDB_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_i8Gl4-z3EeayEK1tAvNtaA" comment="" name="SorDB_Database" prompt="SorDB_Database?" promptNeeded="false" type="id_String" value="sordb"/>
+  <contextParameter xmi:id="_i8Gl5Oz3EeayEK1tAvNtaA" comment="" name="SorDB_Server" prompt="SorDB_Server?" promptNeeded="false" type="id_String" value="devdb1"/>
+  <contextParameter xmi:id="_i8Gl5ez3EeayEK1tAvNtaA" comment="" name="SorDB_Schema" prompt="SorDB_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_i8Gl5uz3EeayEK1tAvNtaA" comment="" name="SorDB_AdditionalParams" prompt="SorDB_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_i8Gl5-z3EeayEK1tAvNtaA" comment="" name="SorDB_Login" prompt="SorDB_Login?" promptNeeded="false" type="id_String" value="etlprocess"/>
+</talendfile:ContextType>

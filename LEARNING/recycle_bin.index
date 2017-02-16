@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2017-02-15T14:22:13.081-0600">
+  <deletedItems id="_Pqr58MjkEea_iq9hI1kAKQ" path="" type="CONTEXT"/>
+  <deletedItems id="_XBHEAMtMEeafCr5ytUoRgA" path="FulfillTrans/NewgisticsETL" type="PROCESS"/>
+  <deletedItems id="_qpwIcMjkEea_iq9hI1kAKQ" path="" type="CONTEXT"/>
+  <deletedItems id="_JFRFIMjkEea_iq9hI1kAKQ" path="" type="METADATA_CONNECTIONS"/>
+  <deletedItems id="_4f8xEPMGEeaT38zrwAwu6A" path="demo" type="PROCESS"/>
+  <deletedItems id="_H9hacPOYEeaQSftR5-Ku_g" path="process/_rGKm4POSEeaEHoNNgYen9A" type="TEST_CONTAINER"/>
+  <deletedItems id="_0YdikPObEeaQSftR5-Ku_g" path="process/_rGKm4POSEeaEHoNNgYen9A" type="TEST_CONTAINER"/>
+  <deletedItems id="_tiXGEPOeEeaQSftR5-Ku_g" path="process/_rGKm4POSEeaEHoNNgYen9A" type="TEST_CONTAINER"/>
+  <deletedItems id="_weixEPOjEeaQSftR5-Ku_g" path="process/_rGKm4POSEeaEHoNNgYen9A" type="TEST_CONTAINER"/>
+  <deletedItems id="_pdwN4POuEeaQSftR5-Ku_g" path="process/_rGKm4POSEeaEHoNNgYen9A" type="TEST_CONTAINER"/>
+  <deletedItems id="_PS5_sPOwEeaQSftR5-Ku_g" path="process/_rGKm4POSEeaEHoNNgYen9A" type="TEST_CONTAINER"/>
+  <deletedItems id="_dZe8APO0EeaQSftR5-Ku_g" path="process/_rGKm4POSEeaEHoNNgYen9A" type="TEST_CONTAINER"/>
+</recyclebin:RecycleBin>

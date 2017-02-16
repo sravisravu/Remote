@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_CA_14OG2EeaqJqSeXDHQbg" name="devconnection" id="_1gKykOG1EeaqJqSeXDHQbg" label="devconnection" dataPackage="_CFpFUOG2EeaqJqSeXDHQbg" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://devdb4:1433/NGSCore;" Port="1433" Username="ngscoredev" Password="/jkj7gURsnL9gQalABKX1w==" ServerName="devdb4" DatasourceName="" FileFieldName="" SID="NGSCore" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+    <taggedValue xmi:id="_CBBEAOG2EeaqJqSeXDHQbg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_CBaFkOG2EeaqJqSeXDHQbg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_CBiBYOG2EeaqJqSeXDHQbg" tag="Status" value=""/>
+    <taggedValue xmi:id="_CBiBYeG2EeaqJqSeXDHQbg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_CBiBYuG2EeaqJqSeXDHQbg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_CBiBY-G2EeaqJqSeXDHQbg" tag="Description" value=""/>
+    <taggedValue xmi:id="_CBiBZOG2EeaqJqSeXDHQbg" tag="Author" value=""/>
+    <taggedValue xmi:id="_CBiBZeG2EeaqJqSeXDHQbg" tag="otherParameter"/>
+    <taggedValue xmi:id="_CC8WoOG2EeaqJqSeXDHQbg" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_CC8WoeG2EeaqJqSeXDHQbg" tag="DB ProductVersion" value="12.00.4436"/>
+    <taggedValue xmi:id="_CC8WouG2EeaqJqSeXDHQbg" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_CBBEAeG2EeaqJqSeXDHQbg" key="CONN_PARA_KEY_USERNAME" value="ngscoredev"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_CFpFUOG2EeaqJqSeXDHQbg" name="NGSCore" dataManager="_CA_14OG2EeaqJqSeXDHQbg">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CFq6gOG2EeaqJqSeXDHQbg" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_V-NzoMv8EeaExJrQ5pue5w" name="NgsETL" id="_9nHs8Mv7EeaExJrQ5pue5w" label="NgsETL" dataPackage="_WZ8GUMv8EeaExJrQ5pue5w" ContextMode="true" ContextId="_Vt-_QMv8EeaExJrQ5pue5w" contextName="Default" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://devdb1:1433/NgsETL;" Port="context.NgsETL_Port" Username="context.NgsETL_Login" Password="context.NgsETL_Password" ServerName="context.NgsETL_Server" DatasourceName="" FileFieldName="" SID="context.NgsETL_Database" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="context.NgsETL_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.NgsETL_Schema">
+    <taggedValue xmi:id="_V-Nzocv8EeaExJrQ5pue5w" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_V_HLgMv8EeaExJrQ5pue5w" tag="package filter" value=""/>
+    <taggedValue xmi:id="_V_tBYMv8EeaExJrQ5pue5w" tag="Status" value=""/>
+    <taggedValue xmi:id="_V_tBYcv8EeaExJrQ5pue5w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_V_tBYsv8EeaExJrQ5pue5w" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_V_tBY8v8EeaExJrQ5pue5w" tag="Description" value=""/>
+    <taggedValue xmi:id="_V_tBZMv8EeaExJrQ5pue5w" tag="Author" value=""/>
+    <taggedValue xmi:id="_V_tBZcv8EeaExJrQ5pue5w" tag="otherParameter"/>
+    <taggedValue xmi:id="_WIzTAMv8EeaExJrQ5pue5w" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_WIzTAcv8EeaExJrQ5pue5w" tag="DB ProductVersion" value="12.00.2370"/>
+    <taggedValue xmi:id="_WIzTAsv8EeaExJrQ5pue5w" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <queries xmi:id="_Sy4DkMv9EeaExJrQ5pue5w">
+      <query xmi:id="_Sy4Dksv9EeaExJrQ5pue5w" id="_Sy4Dkcv9EeaExJrQ5pue5w" label="OrgMerchantIDXref" value="select MerchantID&#xD;&#xA; from OrgMerchantIDXref"/>
+      <query xmi:id="_aUiW0cwAEeaExJrQ5pue5w" id="_aUiW0MwAEeaExJrQ5pue5w" label="NgsFacilityNumXref" value="select NgsFacilityNum, FacilityID&#xD;&#xA; from NgsFacilityNumXref"/>
+    </queries>
+    <parameters xmi:id="_V-Nzosv8EeaExJrQ5pue5w" key="CONN_PARA_KEY_USERNAME" value="context.NgsETL_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_WZ8GUMv8EeaExJrQ5pue5w" name="NgsETL" dataManager="_V-NzoMv8EeaExJrQ5pue5w">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GUcv8EeaExJrQ5pue5w" name="Canada"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GUsv8EeaExJrQ5pue5w" name="Carrier"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GU8v8EeaExJrQ5pue5w" name="CDuvall"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GVMv8EeaExJrQ5pue5w" name="corpdom1\sql_readonly"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GVcv8EeaExJrQ5pue5w" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GVsv8EeaExJrQ5pue5w" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GV8v8EeaExJrQ5pue5w" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GWMv8EeaExJrQ5pue5w" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GWcv8EeaExJrQ5pue5w" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GWsv8EeaExJrQ5pue5w" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GW8v8EeaExJrQ5pue5w" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GXMv8EeaExJrQ5pue5w" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GXcv8EeaExJrQ5pue5w" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GXsv8EeaExJrQ5pue5w" name="dbo">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_gGj8oMv8EeaExJrQ5pue5w" name="OrgMerchantIDXref" id="_gGRBsMv8EeaExJrQ5pue5w" label="OrgMerchantIDXref" tableType="TABLE">
+        <taggedValue xmi:id="_gGj8ocv8EeaExJrQ5pue5w" tag="Comment" value=""/>
+        <feature xsi:type="relational:TdColumn" xmi:id="_gGj8osv8EeaExJrQ5pue5w" name="MerchantID" label="MerchantID" length="20" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+          <taggedValue xmi:id="_gGj8o8v8EeaExJrQ5pue5w" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_gGj8pMv8EeaExJrQ5pue5w" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_gGj8pcv8EeaExJrQ5pue5w" name="VARCHAR" javaDataType="12"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_gGj8psv8EeaExJrQ5pue5w" name="OrgKey" label="OrgKey" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="_gGj8p8v8EeaExJrQ5pue5w" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_gGj8qMv8EeaExJrQ5pue5w" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_gGj8qcv8EeaExJrQ5pue5w" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_gGj8qsv8EeaExJrQ5pue5w" name="OrgID" label="OrgID" length="10" sourceType="INT" talendType="id_Integer">
+          <taggedValue xmi:id="_gGj8q8v8EeaExJrQ5pue5w" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_gGj8rMv8EeaExJrQ5pue5w" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_gGj8rcv8EeaExJrQ5pue5w" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_C9qXAcwAEeaExJrQ5pue5w" name="NgsFacilityNumXref" id="_C9qXAMwAEeaExJrQ5pue5w" label="NgsFacilityNumXref" tableType="TABLE">
+        <taggedValue xmi:id="_C9qXAswAEeaExJrQ5pue5w" tag="Comment" value=""/>
+        <feature xsi:type="relational:TdColumn" xmi:id="_C9qXA8wAEeaExJrQ5pue5w" name="NgsFacilityNum" label="NgsFacilityNum" length="50" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+          <taggedValue xmi:id="_C9qXBMwAEeaExJrQ5pue5w" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_C9qXBcwAEeaExJrQ5pue5w" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_C9qXBswAEeaExJrQ5pue5w" name="VARCHAR" javaDataType="12"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_C9qXB8wAEeaExJrQ5pue5w" name="FacilityID" label="FacilityID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="_C9qXCMwAEeaExJrQ5pue5w" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_C9qXCcwAEeaExJrQ5pue5w" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_C9qXCswAEeaExJrQ5pue5w" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_C9qXC8wAEeaExJrQ5pue5w" name="FacilityKey" label="FacilityKey" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="_C9qXDMwAEeaExJrQ5pue5w" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_C9qXDcwAEeaExJrQ5pue5w" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_C9qXDswAEeaExJrQ5pue5w" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GX8v8EeaExJrQ5pue5w" name="etlprocess"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GYMv8EeaExJrQ5pue5w" name="fulfill"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GYcv8EeaExJrQ5pue5w" name="FwdCore"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GYsv8EeaExJrQ5pue5w" name="FwdPostal"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GY8v8EeaExJrQ5pue5w" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GZMv8EeaExJrQ5pue5w" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GZcv8EeaExJrQ5pue5w" name="Journal"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GZsv8EeaExJrQ5pue5w" name="NGSETL"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GZ8v8EeaExJrQ5pue5w" name="persistenceUsers"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GaMv8EeaExJrQ5pue5w" name="quality"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8Gacv8EeaExJrQ5pue5w" name="RevCore"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8Gasv8EeaExJrQ5pue5w" name="RevPostal"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8Ga8v8EeaExJrQ5pue5w" name="state_persistence_users"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GbMv8EeaExJrQ5pue5w" name="sys"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8Gbcv8EeaExJrQ5pue5w" name="System.Activities.DurableInstancing"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8Gbsv8EeaExJrQ5pue5w" name="tracking_profilereaderwriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8Gb8v8EeaExJrQ5pue5w" name="tracking_reader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WZ8GcMv8EeaExJrQ5pue5w" name="tracking_writer"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

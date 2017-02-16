@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_SDS00OG2EeaqJqSeXDHQbg" name="EN_Month">
+  <taggedValue xmi:id="_SDS00eG2EeaqJqSeXDHQbg" tag="Description" value="Month in English"/>
+  <taggedValue xmi:id="_SDS00uG2EeaqJqSeXDHQbg" tag="Purpose" value="January | February "/>
+  <taggedValue xmi:id="_SDS00-G2EeaqJqSeXDHQbg" tag="Validation_Status" value="true"/>
+  <taggedValue xmi:id="_SDS01OG2EeaqJqSeXDHQbg" tag="Status" value="Draft"/>
+  <taggedValue xmi:id="_SDS01eG2EeaqJqSeXDHQbg" tag="Author"/>
+  <taggedValue xmi:id="_SDS01uG2EeaqJqSeXDHQbg" tag="Version" value="0.1"/>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_SEQeIOG2EeaqJqSeXDHQbg" expressionType="REGEXP">
+    <expression xmi:id="_SEQeIeG2EeaqJqSeXDHQbg" body="'^(January|June|July|February|March|May|April|August|September|October|November|December)$'" language="SQL"/>
+  </components>
+</dataquality.domain.pattern:Pattern>

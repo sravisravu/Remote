@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_i7p58Oz3EeayEK1tAvNtaA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_i7p58ez3EeayEK1tAvNtaA" comment="" name="NgsDW_Login" prompt="NgsDW_Login?" promptNeeded="false" type="id_String" value="etlprocess"/>
+  <contextParameter xmi:id="_i7p58uz3EeayEK1tAvNtaA" comment="" name="NgsDW_Password" prompt="NgsDW_Password?" promptNeeded="false" type="id_Password" value="8DRInXJ37r13v4h4eGfdfQ=="/>
+  <contextParameter xmi:id="_i7p58-z3EeayEK1tAvNtaA" comment="" name="NgsDW_Server" prompt="NgsDW_Server?" promptNeeded="false" type="id_String" value="devdb1"/>
+  <contextParameter xmi:id="_i7p59Oz3EeayEK1tAvNtaA" comment="" name="NgsDW_Schema" prompt="NgsDW_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_i7p59ez3EeayEK1tAvNtaA" comment="" name="NgsDW_AdditionalParams" prompt="NgsDW_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_i7p59uz3EeayEK1tAvNtaA" comment="" name="NgsDW_Port" prompt="NgsDW_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_i7p59-z3EeayEK1tAvNtaA" comment="" name="NgsDW_Database" prompt="NgsDW_Database?" promptNeeded="false" type="id_String" value="NgsDW"/>
+</talendfile:ContextType>
