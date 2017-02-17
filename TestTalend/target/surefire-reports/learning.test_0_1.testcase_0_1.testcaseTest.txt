@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: learning.test_0_1.testcase_0_1.testcaseTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec <<< FAILURE!
+learning.test_0_1.testcase_0_1.testcaseTest.testDefault()  Time elapsed: 0.032 sec  <<< FAILURE!
+java.lang.AssertionError: Failure=1
+tAssert_1:File from reference differs from input
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at learning.test_0_1.testcase_0_1.testcaseTest.testDefault(testcaseTest.java:1409)
+
