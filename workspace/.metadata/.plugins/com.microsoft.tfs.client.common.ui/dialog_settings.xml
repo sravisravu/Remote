@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.microsoft.tfs.client.common.ui.dialogs.connect.ServerListDialog">
+		<item value="1" key="VIEWS"/>
+		<item value="218" key="DIALOG_ORIGIN_Y"/>
+		<item value="2578" key="DIALOG_ORIGIN_X"/>
+		<item value="736" key="DIALOG_WIDTH"/>
+		<item value="03/13/15 13:01:48" key="SINCE"/>
+		<item value="35669" key="ACCUMULATED_OPEN_TIME"/>
+		<item value="361" key="DIALOG_HEIGHT"/>
+		<item value="1" key="TIME_COUNTS"/>
+	</section>
+	<section name="wizard-ShareWizard">
+	</section>
+	<section name="com.microsoft.tfs.client.common.ui.teambuild.dialogs.TfsBuildDefinitionDialog">
+		<item value="7" key="VIEWS"/>
+		<item value="03/13/15 13:59:13" key="SINCE"/>
+	</section>
+	<section name="wizard-EclipseTeamProjectWizard">
+	</section>
+	<section name="com.microsoft.tfs.client.common.ui.dialogs.connect.AddServerDialog">
+		<item value="1" key="VIEWS"/>
+		<item value="189" key="DIALOG_ORIGIN_Y"/>
+		<item value="2696" key="DIALOG_ORIGIN_X"/>
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="03/13/15 13:01:56" key="SINCE"/>
+		<item value="13275" key="ACCUMULATED_OPEN_TIME"/>
+		<item value="314" key="DIALOG_HEIGHT"/>
+		<item value="1" key="TIME_COUNTS"/>
+	</section>
+</section>

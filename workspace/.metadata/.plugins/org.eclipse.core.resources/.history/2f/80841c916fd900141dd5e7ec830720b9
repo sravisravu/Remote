@@ -1,0 +1,24 @@
+public class Test{
+	public static void main(String args[])
+	{
+     String accountNumber="";
+     String ShipperCity="Fishers";
+     String ConsigneeCity="Salt Lake City";
+if   (ShipperCity.equals("Elizabeth"))
+    {
+        accountNumber  = "153281";
+    } 
+else if (ShipperCity.equals("Fishers") &&
+        ConsigneeCity.equals( "Salt Lake City"))
+{
+    accountNumber  = "185451";
+}
+    else if (ShipperCity.equals("Fishers"))
+    {
+         accountNumber  = "156997";
+    }
+   
+System.out.println(accountNumber);
+   
+	}
+}

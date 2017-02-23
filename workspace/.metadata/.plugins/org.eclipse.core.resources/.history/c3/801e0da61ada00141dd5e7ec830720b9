@@ -1,0 +1,8 @@
+public class hex {
+	
+		  public static void main(String[] arg){
+		     System.out.println(Integer.toHexString(23448)); 
+		    
+		  }
+
+		}

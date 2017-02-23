@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+publish_release_url=https\://devtalend.newgistics.com\:8081/nexus/content/repositories/talend-custom-libs-release/
+publish_snapshot_url=https\://devtalend.newgistics.com\:8081/nexus/content/repositories/talend-custom-libs-snapshot/

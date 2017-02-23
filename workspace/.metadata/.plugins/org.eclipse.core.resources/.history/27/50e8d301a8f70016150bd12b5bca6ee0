@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:testConProperties="http://www.talend.com/testConProperties.ecore">
+  <TalendProperties:Property xmi:id="_CLmrwPehEeayPI8rYj_KpA" id="_CLhzQPehEeayPI8rYj_KpA" label="test" creationDate="2017-02-20T13:16:08.953-0600" modificationDate="2017-02-20T13:18:08.948-0600" version="0.1" statusCode="" item="_CLmrwvehEeayPI8rYj_KpA" displayName="test">
+    <author href="../../../talend.project#_18wSofeHEeayPI8rYj_KpA"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_CLmrwfehEeayPI8rYj_KpA" path="process/___39YPeHEeayPI8rYj_KpA" locked="true" lockDate="2017-02-20T13:16:09.192-0600">
+    <locker href="../../../talend.project#_18wSofeHEeayPI8rYj_KpA"/>
+  </TalendProperties:ItemState>
+  <testConProperties:TestContainerItem xmi:id="_CLmrwvehEeayPI8rYj_KpA" property="_CLmrwPehEeayPI8rYj_KpA" state="_CLmrwfehEeayPI8rYj_KpA">
+    <process href="test_0.1.item#_UD7_QPehEeayPI8rYj_KpA"/>
+    <testContainerProcess href="test_0.1.item#_UD7_QPehEeayPI8rYj_KpA"/>
+  </testConProperties:TestContainerItem>
+</xmi:XMI>

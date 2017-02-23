@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_XsJ6kPeKEeayPI8rYj_KpA" name="Devdb4" id="_QX5CwPeKEeayPI8rYj_KpA" label="Devdb4" dataPackage="_Xv3V4PeKEeayPI8rYj_KpA" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://devdb4:1433/ngsdw;" Port="1433" Username="etlprocess" Password="8DRInXJ37r13v4h4eGfdfQ==" ServerName="devdb4" DatasourceName="" FileFieldName="" SID="ngsdw" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_XsLIsPeKEeayPI8rYj_KpA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_XssGEPeKEeayPI8rYj_KpA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_XsstIPeKEeayPI8rYj_KpA" tag="Status" value=""/>
+    <taggedValue xmi:id="_XsstIfeKEeayPI8rYj_KpA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_XsstIveKEeayPI8rYj_KpA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_XstUMPeKEeayPI8rYj_KpA" tag="Description" value=""/>
+    <taggedValue xmi:id="_XstUMfeKEeayPI8rYj_KpA" tag="Author" value=""/>
+    <taggedValue xmi:id="_XstUMveKEeayPI8rYj_KpA" tag="otherParameter"/>
+    <taggedValue xmi:id="_XtuA0PeKEeayPI8rYj_KpA" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_XtuA0feKEeayPI8rYj_KpA" tag="DB ProductVersion" value="12.00.4436"/>
+    <taggedValue xmi:id="_XtuA0veKEeayPI8rYj_KpA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_XsLIsfeKEeayPI8rYj_KpA" key="CONN_PARA_KEY_USERNAME" value="etlprocess"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Xv3V4PeKEeayPI8rYj_KpA" name="ngsdw" dataManager="_XsJ6kPeKEeayPI8rYj_KpA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V4feKEeayPI8rYj_KpA" name="archiveprocess"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V4veKEeayPI8rYj_KpA" name="Carrier"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V4_eKEeayPI8rYj_KpA" name="ClientPortal"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V5PeKEeayPI8rYj_KpA" name="CORPDOM1\group_prodsupport"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V5feKEeayPI8rYj_KpA" name="corpdom1\sql_readonly"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V5veKEeayPI8rYj_KpA" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V5_eKEeayPI8rYj_KpA" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V6PeKEeayPI8rYj_KpA" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V6feKEeayPI8rYj_KpA" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V6veKEeayPI8rYj_KpA" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V6_eKEeayPI8rYj_KpA" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V7PeKEeayPI8rYj_KpA" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V7feKEeayPI8rYj_KpA" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V7veKEeayPI8rYj_KpA" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V7_eKEeayPI8rYj_KpA" name="dbo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V8PeKEeayPI8rYj_KpA" name="Dev"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V8feKEeayPI8rYj_KpA" name="ETLProcess"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V8veKEeayPI8rYj_KpA" name="fulfill"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V8_eKEeayPI8rYj_KpA" name="FulfillRecon"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V9PeKEeayPI8rYj_KpA" name="FwdBilling"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V9feKEeayPI8rYj_KpA" name="FWDCore"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V9veKEeayPI8rYj_KpA" name="FWDInvoice"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V9_eKEeayPI8rYj_KpA" name="FWDPostal"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V-PeKEeayPI8rYj_KpA" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V-feKEeayPI8rYj_KpA" name="HYPERION"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V-veKEeayPI8rYj_KpA" name="hypintel"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V-_eKEeayPI8rYj_KpA" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V_PeKEeayPI8rYj_KpA" name="maintenance"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V_feKEeayPI8rYj_KpA" name="network"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V_veKEeayPI8rYj_KpA" name="NGSACReport"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3V__eKEeayPI8rYj_KpA" name="NGSETL"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3WAPeKEeayPI8rYj_KpA" name="NGSServer"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3WAfeKEeayPI8rYj_KpA" name="Report"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3WAveKEeayPI8rYj_KpA" name="RevPostal"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Xv3WA_eKEeayPI8rYj_KpA" name="sys"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_IR0vkcJNEeaouuYwsoLumQ" label="Sandbox_smailavaram2_project" description="Sandbox_smailavaram2_project" language="java" technicalLabel="SANDBOX_SMAILAVARAM2_PROJECT" creationDate="2016-12-14T16:21:00.137-0600" author="_IR1WoMJNEeaouuYwsoLumQ" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://bitbucket.org/ngsteam/talendsource&quot;,&quot;login&quot;:&quot;drouse@newgistics.com&quot;,&quot;passwd&quot;:&quot;6faUhDWTfiwnH2ePkNGGnA==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ"/>
+  <TalendProperties:User xmi:id="_IR1WoMJNEeaouuYwsoLumQ" login="smailavaram2@newgistics.com" password="133987B0B6AD0C01FC0CCBDAE1B95449" firstName="Sravanthi" lastName="Mailavaram" authenticationInfo=":" type="DQ"/>
+</xmi:XMI>

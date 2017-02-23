@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.talend.test</groupId>
+  <artifactId>testcase</artifactId>
+  <versioning>
+    <release>0.1</release>
+    <versions>
+      <version>0.1</version>
+    </versions>
+    <lastUpdated>20170219161504</lastUpdated>
+  </versioning>
+</metadata>

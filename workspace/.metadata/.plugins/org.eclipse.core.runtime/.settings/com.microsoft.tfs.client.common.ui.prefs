@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+table-column-widths/BuildsTableControl\#Composite\#TeamFoundationServerExploringEclipse/buildDefinition=150
+table-column-widths/BuildsTableControl\#Composite\#TeamFoundationServerExploringEclipse/buildQuality=100
+table-column-widths/BuildsTableControl\#Composite\#TeamFoundationServerExploringEclipse/dateCompleted=100
+table-column-widths/BuildsTableControl\#Composite\#TeamFoundationServerExploringEclipse/keepForever=22
+table-column-widths/BuildsTableControl\#Composite\#TeamFoundationServerExploringEclipse/name=200
+table-column-widths/BuildsTableControl\#Composite\#TeamFoundationServerExploringEclipse/reason=22
+table-column-widths/BuildsTableControl\#Composite\#TeamFoundationServerExploringEclipse/requestedBy=120
+table-column-widths/BuildsTableControl\#Composite\#TeamFoundationServerExploringEclipse/status=22
+table-column-widths/ProjectCollectionTable\#Composite\#AddExistingTeamProject/name=356
+table-column-widths/ServerListTable\#ServerListControl\#AddRemoveTeamFoundationServer/name=200
+table-column-widths/ServerListTable\#ServerListControl\#AddRemoveTeamFoundationServer/server=200
